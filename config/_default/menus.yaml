@@ -10,11 +10,20 @@ main:
 
   - name: resumé
     url: /about
+    weight: 
+  - parent: resumé
+    name: About
+    url: /about#about
+    weight: 10
+  - parent: resumé
+    name: Experience
+    url: /about#experience
     weight: 20
 
+    
   - name: Posts
     url: /post
-    weight: 11
+    weight: 15
   - parent: Posts
     name: All Posts
     url: /post/all
