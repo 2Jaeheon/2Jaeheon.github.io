@@ -6,19 +6,18 @@
 main:
   - name: Home
     url: /
-    weight: 10
+    weight: 1
 
   - name: resumé
-    url: /about
-    weight: 
+    weight: 2
   - parent: resumé
     name: About
     url: /about#about
-    weight: 10
+    weight: 50
   - parent: resumé
     name: Experience
     url: /about#experience
-    weight: 20
+    weight: 50
 
 
   - name: Posts
