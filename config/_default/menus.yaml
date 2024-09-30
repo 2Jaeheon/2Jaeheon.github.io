@@ -8,15 +8,15 @@ main:
     url: /
     weight: 10
 
-
-
   - name: Posts
     url: /post
     weight: 11
   - parent: Posts
     name: All Posts
     url: /post/all
-    weight: 5
+    weight: 50
+  - parent: Posts
+    name: Soft Skills    
     url: /post/softSkills
     weight: 50
 
