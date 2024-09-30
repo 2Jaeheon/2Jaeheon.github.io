@@ -42,11 +42,11 @@ body {
     }
   }
 }
-.navbar .nav-link:hover {
-  color: #4accb2 !important;
-  transition: color 0.3s ease;
-}
 
+.navbar .dropdown-menu .dropdown-item:hover {
+  color: #4accb2 !important;
+  transition: all 0.3s ease;
+}
 
 // custom section padding
 .home-section {
