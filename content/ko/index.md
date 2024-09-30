@@ -15,7 +15,7 @@ sections:
         align: center
         background:
           image:
-            filename: recruitment.jpg
+            filename: test.jpg
             filters:
               brightness: 0.4
           position: center
@@ -32,7 +32,7 @@ sections:
         align: center
         background:
           image:
-            filename: Ai.jpg
+            filename: test.jpg
             filters:
               brightness: 0.4
           position: center
@@ -43,7 +43,7 @@ sections:
         align: center
         background:
           image:
-            filename: healthcare.jpg
+            filename: test.jpg
             filters:
               brightness: 0.4
           position: center
@@ -54,7 +54,7 @@ sections:
         align: center
         background:
           image:
-            filename: mathematics.jpg
+            filename: test.jpg
             filters:
               brightness: 0.4
           position: center
@@ -65,7 +65,7 @@ sections:
         align: center
         background:
           image:
-            filename: development.jpg
+            filename: test.jpg
             filters:
               brightness: 0.4
           position: center
