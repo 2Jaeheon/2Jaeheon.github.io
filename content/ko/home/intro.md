@@ -22,5 +22,3 @@ author: admin
 현재 전북대학교 컴퓨터 인공지능 학과에서 공부하고 있으며, 다양한 프로젝트 경험과 기술 스택을 확장시키기 위해 노력하고 있습니다.
 {style="font-size: 1.4rem; background: #fe5c5c; background: linear-gradient(to right, #fe5c5c 0%, #fe5c5c 30%, #fe5c5c 60%, #fe5c5c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
-
-Check out my [resumé](/about/) and portfolio below 😍
