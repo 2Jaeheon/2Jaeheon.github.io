@@ -6,8 +6,8 @@
 # Appearance
 
 appearance:
-  theme_day: 1950s
-  theme_night: Forest
+  theme_day: Minimal
+  theme_night: Dark
   font: minimal
   font_size: L
 
