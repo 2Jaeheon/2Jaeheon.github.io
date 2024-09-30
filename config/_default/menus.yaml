@@ -8,13 +8,13 @@ main:
     url: /
     weight: 1
 
-  - name: resumé
+  - name: Introduction
     weight: 2
-  - parent: resumé
+  - parent: Introduction
     name: About
     url: /about#about
     weight: 50
-  - parent: resumé
+  - parent: Introduction
     name: Experience
     url: /about#experience
     weight: 50
@@ -22,7 +22,7 @@ main:
 
   - name: Posts
     url: /post
-    weight: 15
+    weight: 3
   - parent: Posts
     name: All Posts
     url: /post/all
@@ -36,21 +36,21 @@ main:
     url: /post/hardSkills
     weight: 48  
 
-  - name: Experience
+  - name: Leisure
     url: /experience
-    weight: 12
-  - parent: Experience
-    name: History
-    url: /experience/history
-    weight: 50
-  - parent: Experience
+    weight: 5
+  - parent: Leisure
     name: Hobby
     url: /experience/hobby
+    weight: 50
+  - parent: Leisure
+    name: Book
+    url: /experience/book
     weight: 50
 
   - name: Projects
     url: projects/
-    weight: 13
+    weight: 4
   - parent: Projects
     name: Web
     url: /projects/web
