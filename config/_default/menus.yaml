@@ -7,6 +7,51 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Resumé
-    url: about/
+
+
+
+  - name: Posts
+    url: /post
+    weight: 11
+  - parent: Posts
+    name: All Posts
+    url: /post/all
+    weight: 50
+  - parent: Posts
+    name: Hard Skills
+    url: /post/hardSkills
+    weight: 50
+  - parent: Posts
+    name: Soft Skills
+    url: /post/softSkills
+    weight: 50
+
+
+  - name: Experience
+    url: /experience
+    weight: 12
+  - parent: Experience
+    name: History
+    url: /experience/history
+    weight: 50
+  - parent: Experience
+    name: Hobby
+    url: /experience/hobby
+    weight: 50
+
+  - name: Projects
+    url: projects/
+    weight: 13
+  - parent: Projects
+    name: Web
+    url: /projects/web
+    weight: 50
+  - parent: Projects
+    name: CS
+    url: /projects/CS
+    weight: 50
+
+  - name: Contact
+    url: contact/
     weight: 20
+  
