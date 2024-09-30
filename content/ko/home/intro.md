@@ -18,7 +18,8 @@ author: admin
 #  css_class: fullscreen
 ---
 
-👋 Hi, there! I'm **Alice**, a machine learning researcher at Netflix.
-{style="font-size: 1.2rem; background: #FFB76B; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
+👋 안녕하세요 저는 백엔드 개발자 이재헌입니다.
+현재 전북대학교 컴퓨터 인공지능 학과에서 공부하고 있으며, 다양한 프로젝트 경험과 기술 스택을 확장시키기 위해 노력하고 있습니다.
+{style="font-size: 1.4rem; background: #FFB76B; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
 Check out my [resumé](/about/) and portfolio below 😍
