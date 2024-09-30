@@ -32,7 +32,7 @@ content:
         position: center
         color: '#555'
         brightness: 0.3
-        media: git.jpg
+        media: github.jpg
         fit: cover
     - title: 저와 함께하실 분을 구합니다.
       content: 함께하실 분은 아래의 버튼을 눌러 함께해요!
