@@ -35,9 +35,13 @@ body {
 
 // no navbar shadow
 .navbar {
-  box-shadow: none !important; // 'important' to override dark mode box-shadow too.
+  .nav-link {
+    &:hover {
+      color: #008080 !important;
+      transition: color 0.3s ease;
+    }
+  }
 }
-
 // custom section padding
 .home-section {
   padding: 1rem 0;
