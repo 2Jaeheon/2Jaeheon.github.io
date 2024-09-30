@@ -44,7 +44,7 @@ content:
         media: call.jpg
         fit: cover
       link:
-        icon: graduation-cap
+        icon: phone
         icon_pack: fas
         text: Contact Me
         url: ../contact/
