@@ -9,14 +9,14 @@ sections:
     content:
       title: Contact
       text: |-
-        안녕하세요 저는 백엔드 개발자 이재헌입니다. 연락을 희망하시는 분은 아래를 참조해주세요!!
-      email: jaeheon0826@gmail.com
-      phone: +82-010-2967-8645
+       <br> <span style="font-size:95%">안녕하세요 저는 백엔드 개발자 이재헌입니다. 연락을 희망하시는 분은 아래를 참조해주세요!!</span> <br>
+      email: ksl(at)jbnu.ac.kr
+      phone: +82-63-270-2406
       address:
-        street: 서신로 102
+        street: 전북대학교 공과대학 7호관 626호
         city: 전주시
         region: 전라북도
-        postcode: '54945'
+        postcode: '54896'
         country: 대한민국
         country_code: KO
       coordinates:
