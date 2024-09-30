@@ -20,17 +20,7 @@ author: admin
 
 👋 안녕하세요 저는 백엔드 개발자 이재헌입니다.<br>
 현재 전북대학교 컴퓨터 인공지능 학과에서 공부하고 있으며, 다양한 프로젝트 경험과 기술 스택을 확장시키기 위해 노력하고 있습니다.
-
-{style="font-size: 1.4rem; background: #FFB76B; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); color: var(--text-color); -webkit-background-clip: text;"}
-:root {
-  --text-color: #000; /* 라이트 모드일 때 텍스트 색상 */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #fff; /* 다크 모드일 때 텍스트 색상 */
-  }
-}
+{style="font-size: 1.4rem; background: #2ECCFA; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
 
 Check out my [resumé](/about/) and portfolio below 😍
