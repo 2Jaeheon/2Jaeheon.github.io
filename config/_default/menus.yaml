@@ -16,13 +16,7 @@ main:
   - parent: Posts
     name: All Posts
     url: /post/all
-    weight: 50
-  - parent: Posts
-    name: Hard Skills
-    url: /post/hardSkills
-    weight: 50
-  - parent: Posts
-    name: Soft Skills
+    weight: 5
     url: /post/softSkills
     weight: 50
 
