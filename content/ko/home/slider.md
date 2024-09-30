@@ -6,47 +6,47 @@ headless: true  # This file represents a page section.
 
 design:
   # Slide height is automatic unless you force a specific height (e.g. '400px')
-  slide_height: '350px'
+  slide_height: '300px'
   slide_width: '100px'
   is_fullscreen: false
   # Automatically transition through slides?
   loop: true
   # Duration of transition between slides (in ms)
-  interval: 3000
+  interval: 5000
 
 content:
   slides:
-    - title: 👋 Welcome to the group
-      content: Take a look at what we're working on...
+    - title: 👋 웹 페이지에 오신 것을 환영합니다.
+      content: 이 곳은 저의 개발자에 관한 정보들을 담고있습니다.
       align: center
       background:
         position: right
         color: '#666'
-        brightness: 0.7
-        media: test.jpg
+        brightness: 0.3
+        media: code.jpg
         fit: cover
-    - title: Lunch & Learn ☕️
-      content: 'Share your knowledge with the group and explore exciting new topics together!'
+    - title: 개발자로서의 성장 스토리를 만나보세요.
+      content: 이 곳에는 저의 성장 이야기가 잔뜩 담겨있습니다.
       align: left
       background:
         position: center
         color: '#555'
-        brightness: 0.7
-        media: test.jpg
+        brightness: 0.3
+        media: git.jpg
         fit: cover
-    - title: World-Class Semiconductor Lab
-      content: 'Just opened last month!'
+    - title: 저와 함께하실 분을 구합니다.
+      content: 함께하실 분은 아래의 버튼을 눌러 함께해요!
       align: right
       background:
         position: center
         color: '#333'
-        brightness: 0.5
-        media: test.jpg
+        brightness: 0.4
+        media: call.jpg
         fit: cover
       link:
         icon: graduation-cap
         icon_pack: fas
-        text: Join Us
+        text: Contact Me
         url: ../contact/
 ---
 <br><br>
