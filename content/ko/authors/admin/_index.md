@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Alice Wu (吳恩達)
+title: Lee Jaeheon (이재헌)
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: ''
+role: 'Student'
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 👨‍💻
 
 # Organizations/Affiliations
 #organizations:
@@ -42,15 +42,17 @@ bio: My research interests include distributed robotics, mobile computing and pr
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'about/#contact' # For a direct email link, use "mailto:test@example.org".
-  - icon: twitter
+  - icon: github
     icon_pack: fab
-    link: https://twitter.com/wowchemy
+    link: https://github.com/2Jaeheon
+
+  - icon: medium
+    icon_pack: fab
+    link: https://medium.com/@potato013068
+
   - icon: instagram
     icon_pack: fab
-    link: https://instagram.com/geocushen
+    link: https://www.instagram.com/jaeheon0826
 # Uncomment below for Github link
 #- icon: github
 #  icon_pack: fab
