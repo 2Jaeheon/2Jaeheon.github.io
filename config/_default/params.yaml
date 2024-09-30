@@ -95,10 +95,11 @@ features:
       index_name: ''
       show_logo: false
   map:
-    provider: ''
+    provider: 'mapnik'
     api_key: ''
     zoom: 15
 
+    
 extensions:
   cms:
     branch: main
