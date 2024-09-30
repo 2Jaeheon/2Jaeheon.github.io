@@ -32,9 +32,9 @@ main:
     url: /post/softSkills
     weight: 49
   - parent: Posts
-      name: Hard Skills    
-      url: /post/hardSkills
-      weight: 48  
+    name: Hard Skills    
+    url: /post/hardSkills
+    weight: 48  
 
   - name: Experience
     url: /experience
