@@ -13,15 +13,15 @@ sections:
       email: ksl(at)jbnu.ac.kr
       phone: +82-63-270-2406
       address:
-        street: 전북대학교 공과대학 7호관 626호
+        street: 서신로 102
         city: 전주시
         region: 전라북도
-        postcode: '54896'
+        postcode: '54945'
         country: 대한민국
         country_code: KO
       coordinates:
-        latitude: '35.84601324617979'
-        longitude: '127.13444961966684'
+        latitude: '35.8352788067795'
+        longitude: '127.116976226957'
       directions: 
       #contact_links:
       #  - icon: comments
