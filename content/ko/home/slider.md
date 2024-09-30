@@ -25,7 +25,7 @@ content:
         brightness: 0.3
         media: code.jpg
         fit: cover
-    - title: 개발자로서의 성장 스토리를 만나보세요.
+    - title: 성장 스토리를 만나보세요!
       content: 이 곳에는 저의 성장 이야기가 잔뜩 담겨있습니다.
       align: left
       background:
