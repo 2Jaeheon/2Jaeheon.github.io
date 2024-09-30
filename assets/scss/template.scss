@@ -42,6 +42,12 @@ body {
     }
   }
 }
+.navbar .nav-link:hover {
+  color: #4accb2 !important;
+  transition: color 0.3s ease;
+}
+
+
 // custom section padding
 .home-section {
   padding: 1rem 0;
