@@ -9,7 +9,7 @@ sections:
     content:
       title: Contact
       text: |-
-        안녕하세요 저는 백엔드 개발자 이재헌입니다. 연락을 희망하시는 분은 아래를 참조해주세요!!
+        <br> <span style="font-size:95%">전북대학교 의료 AI 및 계산 수학 연구실 (Macs)의 학부연구생/석사 position에 관심 있으시면 아래로 연락주시면 감사드리겠습니다.</span> <br>
       email: ksl(at)jbnu.ac.kr
       phone: +82-63-270-2406
       address:
