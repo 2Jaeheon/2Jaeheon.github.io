@@ -1,12 +1,13 @@
 ---
 widget: slider  # Use the Slider widget as this page section
-weight: 15  # Position of this section on the page
+weight: 5  # Position of this section on the page
 active: true  # Publish this section?
 headless: true  # This file represents a page section.
 
 design:
   # Slide height is automatic unless you force a specific height (e.g. '400px')
-  slide_height: '300px'
+  slide_height: '350px'
+  slide_width: '100px'
   is_fullscreen: false
   # Automatically transition through slides?
   loop: true
