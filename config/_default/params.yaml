@@ -34,13 +34,16 @@ marketing:
 header:
   navbar:
     enable: true
-    align: r
-    show_logo: false
+    align: l
+    show_logo: true
     show_language: false
     show_day_night: true
     show_search: true
     highlight_active_link: false
-
+    fixed_to_top: true
+    logo:
+      text: "Jaeheon's Page"
+  
 footer:
   copyright:
     notice: '© {year} Me. This work is licensed under {license}'
@@ -99,7 +102,7 @@ features:
     api_key: ''
     zoom: 15
 
-    
+
 extensions:
   cms:
     branch: main
