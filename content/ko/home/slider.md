@@ -17,7 +17,6 @@ design:
 content:
   slides:
     - title: 👋 웹 페이지에 오신 것을 환영합니다.
-      content: 이 곳은 저의 정보를 담고있습니다.
       align: center
       background:
         position: right
