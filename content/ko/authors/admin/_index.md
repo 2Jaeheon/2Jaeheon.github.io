@@ -53,10 +53,7 @@ social:
   - icon: instagram
     icon_pack: fab
     link: https://www.instagram.com/jaeheon0826
-# Uncomment below for Github link
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
+
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -68,8 +65,11 @@ social:
 #email: ""
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+저는 웹 백엔드 개발자로서의 커리어를 준비 중인 이재헌입니다. 현재 자바와 스프링, 스프링부트 프레임워크를 집중적으로 공부하며 안정적이고 효율적인 백엔드 시스템을 구현하는 것을 목표로 하고 있습니다. 또한 좋은 코드를 작성하기 위해서 객체지향에 대한 공부중에 있으며, 유지보수가 용이한 코드를 작성하는 것을 목표로 하고 있습니다.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+대학교에서 다양한 컴퓨터 지식들을 학습하고 있습니다. 특히 웹과 데이터를 다루는 부분에 있어서 매력을 느끼고 있으며, 이러한 지식들을 바탕으로 프로젝트를 진행하고 있습니다. 
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+저는 팀워크와 커뮤니케이션을 중요하게 생각하고, 협업 과정에서 상호 발전이 가능한 개발자가 되고 싶습니다. 앞으로도 정진하여 문제해결력을 갖추고, 성장할 수 있는 개발자가 되겠습니다.
+
+
+저의 이력서를 받으시려면 다음을 눌러주세요 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}}
