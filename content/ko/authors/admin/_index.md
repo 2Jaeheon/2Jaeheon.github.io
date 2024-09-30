@@ -72,5 +72,5 @@ social:
 저는 팀워크와 커뮤니케이션을 중요하게 생각하고, 협업 과정에서 상호 발전이 가능한 개발자가 되고 싶습니다. 앞으로도 정진하여 문제해결력을 갖추고, 성장할 수 있는 개발자가 되겠습니다.
 
 
-저의 이력서를 받으시려면 아래의버튼을 눌러주세요 {
-{< icon name="download" pack="fas" >}}{{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}}
+저의 이력서를 받으시려면 아래의버튼을 눌러주세요 
+{{< icon name="download" pack="fas" >}}{{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}}
