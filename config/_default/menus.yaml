@@ -20,7 +20,7 @@ main:
     url: /about#experience
     weight: 20
 
-    
+
   - name: Posts
     url: /post
     weight: 15
@@ -31,8 +31,11 @@ main:
   - parent: Posts
     name: Soft Skills    
     url: /post/softSkills
-    weight: 50
-
+    weight: 49
+  - parent: Posts
+      name: Soft Skills    
+      url: /post/softSkills
+      weight: 48  
 
   - name: Experience
     url: /experience
