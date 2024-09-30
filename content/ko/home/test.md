@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: slider
+title: sliderx
 date: 2024-03-25
 type: landing
 
