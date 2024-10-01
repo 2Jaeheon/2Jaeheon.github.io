@@ -1,6 +1,6 @@
 ---
 title: Blog
-view: landing
+type: landing
 
 section:
   - block: collection
