@@ -21,19 +21,19 @@ main:
 
 
   - name: Posts
-    url: /post
+    url: /posts
     weight: 3
   - parent: Posts
     name: All Posts
-    url: /post/all
+    url: /posts
     weight: 50
   - parent: Posts
     name: Soft Skills    
-    url: /post/softSkills
+    url: /posts/softSkills
     weight: 50
   - parent: Posts
     name: Hard Skills    
-    url: /post/hardSkills
+    url: /posts/hardSkills
     weight: 50  
 
   - name: Leisure
