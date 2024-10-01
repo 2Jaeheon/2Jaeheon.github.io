@@ -10,7 +10,7 @@ headless: true
 weight: 0
 
 # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-title: 'Award&shy;ments'
+title: 'Award'
 subtitle:
 
 # Date format
@@ -23,14 +23,13 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-  - certificate_url: https://www.coursera.org
+  - certificate_url: 
     date_end: ''
     date_start: '2021-01-25'
     description: '2020년도 1학기 최우등상'
     organization: 전주대학교
     title: 최우등상
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    
+    url: 
 
   - certificate_url: https://www.edx.org
     date_end: ''
