@@ -36,7 +36,7 @@ experience:
   - title: 컴퓨터공학과
     company: 전주대학교
     company_url: 'https://www.jj.ac.kr/cse/index.jsp'
-    company_logo: jjnu
+    company_logo: university
     location: 전북특별자치도 전주시
     date_start: '2020-03-02'
     date_end: '2024-01-30'
@@ -45,7 +45,7 @@ experience:
   - title: 컴퓨터인공지능학부
     company: 전북대학교
     company_url: 'https://csai.jbnu.ac.kr/csai/index.do'
-    company_logo: jbnu
+    company_logo: university
     location: 전북특별자치도 전주시
     date_start: '2024-03-02'
     date_end: ''
