@@ -29,7 +29,7 @@ experience:
     location: 전북특별자치도 전주시
     date_start: '2017-03-02'
     date_end: '2017-03-02'
-    description: |2-
+    description: 
         * 독서 토론 동아리
         * 교외 봉사 동아리
 
