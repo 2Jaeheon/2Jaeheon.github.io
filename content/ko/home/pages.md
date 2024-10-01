@@ -24,7 +24,7 @@ content:
     exclude_future: false
     exclude_past: false
   # Choose how many pages you would like to display (0 = all pages)
-  count: 10
+  count: 3
   # Choose how many pages you would like to offset by
 
   # Useful if you wish to show the first item in the Featured widget
@@ -36,7 +36,7 @@ design:
   # Choose a listing view
   view: card
   # Choose how many columns the section has. Valid values: '1' or '2'.
-  columns: '3'
+  columns: '2'
 ---
 
 Check out my recent blog posts below!
