@@ -30,11 +30,11 @@ main:
   - parent: Posts
     name: Soft Skills    
     url: /post/softSkills
-    weight: 49
+    weight: 50
   - parent: Posts
     name: Hard Skills    
     url: /post/hardSkills
-    weight: 48  
+    weight: 50  
 
   - name: Leisure
     url: /experience
