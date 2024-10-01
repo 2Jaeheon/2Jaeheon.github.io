@@ -16,7 +16,7 @@ sections:
       # Display content from the `content/post/` folder
       filters:
         folders:
-          - content/ko/posts
+          - ko/posts
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
