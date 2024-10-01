@@ -36,7 +36,7 @@ design:
   # Choose a listing view
   view: card
   # Choose how many columns the section has. Valid values: '1' or '2'.
-  columns: '4'
+  columns: '3'
 ---
 
 Check out my recent blog posts below!
