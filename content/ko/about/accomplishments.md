@@ -25,11 +25,12 @@ date_format: Jan 2006
 item:
   - certificate_url: https://www.coursera.org
     date_end: ''
-    date_start: '2020'
+    date_start: '2021-01-25'
     description: '2020년도 1학기 최우등상'
     organization: 전주대학교
     title: 최우등상
-    url: test.html
+    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+    
 
   - certificate_url: https://www.edx.org
     date_end: ''
