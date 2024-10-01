@@ -16,7 +16,7 @@ sections:
       # Display content from the `content/post/` folder
       filters:
         folders:
-          - ko/posts/get-started
+          - ko
         recursive: true
       sort_by: 'Date'
       sort_ascending: false
