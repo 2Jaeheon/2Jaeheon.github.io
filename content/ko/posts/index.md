@@ -1,6 +1,6 @@
 ---
 title: Blog
-view: article-grid
+view: landing
 
 section:
   - block: collection
