@@ -16,7 +16,8 @@ sections:
       # Display content from the `content/post/` folder
       filters:
         folders:
-          - ko
+          - ko/posts/project-management
+          - ko/posts/second-brain
         recursive: true
       sort_by: 'Date'
       sort_ascending: false
