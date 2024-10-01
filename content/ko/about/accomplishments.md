@@ -7,7 +7,7 @@ widget: accomplishments
 headless: true
 
 # Order that this section appears on the page.
-weight: 0
+weight: 40
 
 # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
 title: 'Award'
@@ -25,29 +25,35 @@ date_format: Jan 2006
 item:
   - certificate_url: 
     date_end: ''
-    date_start: '2021-01-25'
+    date_start: '2020-08-28'
     description: '2020년도 1학기 최우등상'
     organization: 전주대학교
     title: 최우등상
     url: 
 
-  - certificate_url: https://www.edx.org
+  - certificate_url: 
     date_end: ''
-    date_start: '2021-01-01'
-    description: Formulated informed blockchain models, hypotheses, and use cases.
-    organization: edX
-    organization_url: https://www.edx.org
-    title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+    date_start: '2021-02-28'
+    description: '2020년도 2학기 최우등상'
+    organization: 전주대학교
+    title: 최우등상
+    url: 
 
-  - certificate_url: https://www.datacamp.com
-    date_end: '2020-12-21'
-    date_start: '2020-07-01'
-    description: ''
-    organization: DataCamp
-    organization_url: https://www.datacamp.com
-    title: 'Object-Oriented Programming in R'
-    url: ''
+  - certificate_url: 
+    date_end: ''
+    date_start: '2023-08-16'
+    description: '2023년도 1학기 최우등상'
+    organization: 전주대학교
+    title: 최우등상
+    url: 
+
+  - certificate_url: 
+    date_end: ''
+    date_start: '2024-02-21'
+    description: '2023년도 1학기 최우등상'
+    organization: 전주대학교
+    title: 최우등상
+    url: 
 
 design:
   columns: '1'

@@ -25,32 +25,31 @@ experience:
   - title: 고등학생
     company: 전주 한일고등학교
     company_url: 'https://school.jbedu.kr/hanilgo/'
-    company_logo: org-x
+    company_logo: school
     location: 전북특별자치도 전주시
     date_start: '2017-03-02'
     date_end: '2017-03-02'
     description: |2-
         * 독서 토론 동아리
         * 교외 봉사 동아리
-        * 부반장
 
   - title: 컴퓨터공학과
     company: 전주대학교
     company_url: 'https://www.jj.ac.kr/cse/index.jsp'
-    company_logo: org-x
+    company_logo: jjnu
     location: 전북특별자치도 전주시
     date_start: '2020-03-02'
     date_end: '2024-01-30'
-    description: 컴퓨터 공학과에 재학하다가 편입
+    description: 전주대 컴퓨터 공학과 재학 중 편입하였음
 
-  - title: 컴퓨터 인공지능 학부
+  - title: 컴퓨터인공지능학부
     company: 전북대학교
     company_url: 'https://csai.jbnu.ac.kr/csai/index.do'
-    company_logo: org-x
+    company_logo: jbnu
     location: 전북특별자치도 전주시
     date_start: '2024-03-02'
     date_end: ''
-    description: 전북대 컴퓨터 인공지능 학부 재학중
+    description: 현재 전북대 컴퓨터 인공지능 학부 재학중
 
 design:
   columns: '1'
