@@ -16,7 +16,10 @@ sections:
       # Display content from the `content/post/` folder
       filters:
         folders:
-          - ko/posts/
+          - ko/posts
+        recursive: true
+      sort_by: 'Date'
+      sort_ascending: false
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
