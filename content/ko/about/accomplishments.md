@@ -28,7 +28,6 @@ item:
     date_start: '2020-08-28'
     description: '2020년도 1학기 최우등상'
     organization: 전주대학교
-    organization_logo: university
     title: 최우등상
     url: 
 
@@ -37,7 +36,6 @@ item:
     date_start: '2021-02-28'
     description: '2020년도 2학기 최우등상'
     organization: 전주대학교
-    organization_logo: university
     title: 최우등상
     url: 
 
@@ -46,7 +44,6 @@ item:
     date_start: '2023-08-16'
     description: '2023년도 1학기 최우등상'
     organization: 전주대학교
-    organization_logo: university
     title: 최우등상
     url: 
 
@@ -55,7 +52,6 @@ item:
     date_start: '2024-02-21'
     description: '2023년도 1학기 최우등상'
     organization: 전주대학교
-    organization_logo: university
     title: 최우등상
     url: 
 
