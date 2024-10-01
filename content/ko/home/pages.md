@@ -22,7 +22,7 @@ sections:
       # Display content from the `content/post/` folder
       filters:
         folders:
-          - posts
+          - posts/get-started
         recursive: true
       sort_by: 'Date'
       sort_ascending: false
