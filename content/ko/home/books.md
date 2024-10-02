@@ -15,9 +15,7 @@ content:
   filters:
     # The folders to display content from
     folders:
-      - hardskills
-      - softskills
-      - project
+      - books
     tag: ''
     category: ''
     publication_type: ''
@@ -33,7 +31,7 @@ content:
 design:
   columns: '3'
   view: masonry
-  flip_alt_rows: true
+  flip_alt_rows: false
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
 
