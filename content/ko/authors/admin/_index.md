@@ -18,7 +18,7 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 웹 백엔드 개발자를 희망하는 전북대학교 컴퓨터 인공지능 학부 학생 이재헌입니다.
 
 #interests:
 #- Artificial Intelligence

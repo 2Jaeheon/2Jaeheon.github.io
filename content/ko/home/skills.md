@@ -13,12 +13,12 @@ weight: 15 # The position of section on page
 feature:
 
   - icon: computer
-    icon_pack: custom
+    icon_pack: fab
     name: Java
     description: 90%
 
   - icon: laptop-code
-    icon_pack: custom
+    icon_pack: fab
     name: Spring
     description: 80%
 
