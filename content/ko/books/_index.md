@@ -5,6 +5,6 @@ view: community/card
 
 banner:
   caption: ''
-  image: 'welcome.jpg'
+  image: 'test.jpg'
 
 ---
