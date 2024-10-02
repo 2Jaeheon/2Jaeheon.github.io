@@ -23,6 +23,17 @@ content:
     exclude_featured: false
     exclude_future: false
     exclude_past: false
+
+    filter_button:
+    - name: All
+      tag: '*'
+    - name: Machine Learning
+      tag: test
+    - name: Computer Vision
+      tag: test2
+    - name: NLP
+      tag: test3
+
   # Choose how many pages you would like to display (0 = all pages)
   count: 3
   # Choose how many pages you would like to offset by
