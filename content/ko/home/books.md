@@ -1,5 +1,5 @@
 ---
-widget: collection # As of v5.8-dev, 'pages' is renamed 'collection'
+widget: pages # As of v5.8-dev, 'pages' is renamed 'collection'
 headless: true  # This file represents a page section.
 
 # Put Your Section Options Here (title, background, etc.) ...
