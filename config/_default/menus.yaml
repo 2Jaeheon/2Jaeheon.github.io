@@ -28,7 +28,7 @@ main:
     url: /posts
     weight: 50
   - parent: Posts
-    name: Soft Skills    
+    name: Soft Skills
     url: /softskills
     weight: 50
   - parent: Posts
