@@ -8,6 +8,7 @@
   {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}
 
+{{/* Get summary. */}}
 {{ $summary := "" }}
 {{ if $item.Params.summary }}
   {{ $summary = $item.Params.summary | markdownify | emojify }}
@@ -19,34 +20,36 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="card" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 400px; display: flex; flex-direction: column; height: 100%;">
+<div class="card" style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; transition: transform 0.3s; margin-bottom: 20px;">
   {{ with $resource }}
-  {{ $image := .Resize "550x" }}
+  {{ $image := .Resize "500x" }}  <!-- 이미지 크기 조정 -->
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay" style="display: block;">
-    <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="img-responsive" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
+  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
+    <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+         alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 0; border-bottom: 1px solid #e0e0e0;">
   </a>
   {{ end }}
-  
-  <div class="card-text" style="padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div class="section-subheading article-title mb-1 mt-3">
-      <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="text-decoration: none; color: var(--text-color);">{{ $item.Title | markdownify | emojify }}</a></h4>
+  <div class="card-text" style="padding: 16px;">
+    <div class="section-subheading article-title mb-1">
+        <h4 style="font-size: 1.25rem;"><a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="text-decoration: none; color: #333;">{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
-
+    
     {{ if $item.Params.authors }}
-    <div class="article-metadata" style="color: var(--metadata-color); font-size: 0.9em;">
-      <div>{{ partial "page_metadata_authors" $item }}</div>
+    <div class="article-metadata" style="font-size: 0.875rem; color: #666;">
+        <div>
+            {{ partial "page_metadata_authors" $item }}
+        </div>
     </div>
     {{ end }}
 
     {{ with $summary }}
-    <div class="article-style" style="margin-top: 10px; flex-grow: 1;">
-      <p style="color: var(--summary-color); font-size: 0.95em; line-height: 1.6;">{{ . }}</p>
+    <div class="article-style" style="margin: 8px 0;">
+      <p style="line-height: 1.5;">{{ . }}</p>
     </div>
     {{ end }}
 
     {{ if $has_attachments }}
-    <div class="btn-links" style="margin-top: 10px;">
+    <div class="btn-links">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
     {{ end }}
@@ -54,37 +57,23 @@
 </div>
 
 <style>
-@media (max-width: 768px) {
   .card {
-    margin-bottom: 20px;
-    max-height: none; /* 모바일에서는 높이 제한 제거 */
+    max-width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .card-text {
-    padding: 10px;
+  .card:hover {
+    transform: scale(1.02);
   }
 
-  .article-title h4 {
-    font-size: 1.2em;
-  }
+  @media (max-width: 768px) {
+    .card {
+      margin: 10px;
+    }
 
-  .article-style p {
-    font-size: 0.9em;
+    .card img {
+      width: 100%;
+      height: auto;
+    }
   }
-}
-
-/* 다크모드와 라이트모드 스타일 */
-:root {
-  --text-color: #333; /* 기본 텍스트 색상 */
-  --metadata-color: #666; /* 메타데이터 색상 */
-  --summary-color: #555; /* 요약 색상 */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #f0f0f0; /* 다크모드 텍스트 색상 */
-    --metadata-color: #ccc; /* 다크모드 메타데이터 색상 */
-    --summary-color: #ddd; /* 다크모드 요약 색상 */
-  }
-}
 </style>
