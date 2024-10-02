@@ -44,10 +44,12 @@ content:
   sort_by: 'Date'
   sort_ascending: false
 design:
-  # Choose a listing view
-  view: masonry
-#how many columns the section has. Valid values: '1' or '2'.
   columns: '1'
+  view: masonry
+  flip_alt_rows: true
+  background: {}
+  spacing: {padding: [0, 0, 0, 0]}
+  
 ---
 
 Check out my recent blog posts below!
