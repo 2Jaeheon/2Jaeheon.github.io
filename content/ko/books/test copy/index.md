@@ -1,8 +1,10 @@
 ---
-title: (2024년) 학부연구생 모집
+title: 학부생을 구합니다!
+summary: Write about your project here...
 tags:
-  - test2
-date: 2024-03-29
+  - ML
+date: 2022-01-01
+external_link: http://github.com
 ---
 컨텐츠(웹툰/영상 등)에 관심이 있는 학생
 
