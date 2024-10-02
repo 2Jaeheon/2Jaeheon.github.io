@@ -33,9 +33,9 @@ content:
   sort_ascending: false
 design:
   # Choose a listing view
-  view: card
+  view: community/article_grid_view
   # Choose how many columns the section has. Valid values: '1' or '2'.
-  columns: '2'
+  columns: '1'
 ---
 
 Check out my recent blog posts below!
