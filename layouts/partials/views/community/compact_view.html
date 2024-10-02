@@ -23,66 +23,96 @@
 {{ if $item.Params.summary }}
   {{ $summary = $item.Params.summary | markdownify | emojify }}
 {{ else if $item.Params.abstract }}
-  {{ $summary = $item.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
+  {{ $summary = $item.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 100) }} <!-- 줄임 -->
 {{ else if $item.Summary }}
   {{ $summary = $item.Summary }}
 {{ end }}
 
-<div class="media stream-item view-compact">
-  <!-- 아티클 사진 출력 -->
-  <div class="mr-3">
-    {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+{{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+{{ with $resource }}
+  {{ $image := .Resize "150x" }}
+  {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+{{ end }}
+
+<div class="compact-view">
+  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="compact-item">
     {{ with $resource }}
-      {{ $image := .Resize "150x" }}
-      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
-        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-            alt="{{ $item.Title }}" loading="lazy" style="border-radius: 5px; object-fit: cover;">
-      </a>
+      <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" loading="lazy" class="compact-image">
     {{ end }}
-  </div>
-
-  <div class="media-body">
-    <div class="section-subheading article-title mb-0 mt-0" style="justify-content: center; align-items: center; text-align: justify; text-justify: auto; font-size: 0.99em;">
-      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
-    </div>
-
+    <h5 class="compact-title">{{ $item.Title }}</h5>
     {{ with $summary }}
-    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
-      <div class="article-style">
-        {{ . }}
-      </div>
-    </a>
+      <p class="compact-summary">{{ . }}</p>
     {{ end }}
-
-    <div class="stream-meta article-metadata">
-      {{ if eq $item.Type "event" }}
-      <div>
-        <span>
-          {{ partial "functions/get_event_dates" $item }}
-        </span>
+    {{ if eq $item.Type "event" }}
+      <div class="compact-event-details">
+        {{ partial "functions/get_event_dates" $item }}
         {{ with $item.Params.location }}
-        <span class="middot-divider"></span>
-        <span>{{ . }}</span>
+          <span class="compact-location">{{ . }}</span>
         {{ end }}
       </div>
-      {{ end }}
-
-      {{ if and $show_authors_only $item.Params.authors }}
-      <div>
-        {{ partial "page_metadata_authors" $item }}
-      </div>
-      {{ else if not $show_authors_only }}
-        {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
-      {{ end }}
-    </div>
-
-    {{ if $has_attachments }}
-    <div class="btn-links">
-      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
-    </div>
     {{ end }}
-
-    <div style="margin-bottom: 25px;"></div>
-  </div>
+    {{ if and $show_authors_only $item.Params.authors }}
+      <div class="compact-authors">{{ partial "page_metadata_authors" $item }}</div>
+    {{ else if not $show_authors_only }}
+      <div class="compact-metadata">{{ partial "page_metadata" (dict "page" $item "is_list" 1) }}</div>
+    {{ end }}
+    {{ if $has_attachments }}
+      <div class="compact-links">{{ partial "page_links" (dict "page" $item "is_list" 1) }}</div>
+    {{ end }}
+  </a>
 </div>
+
+<style>
+  .compact-view {
+    max-width: 400px; /* 카드의 최대 너비 */
+    margin: 1rem auto; /* 중앙 배치 */
+    padding: 0.5rem;
+    border: 1px solid #ddd; /* 경계선 추가 */
+    border-radius: 4px; /* 둥근 모서리 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background: #fff; /* 배경색 */
+    transition: box-shadow 0.2s ease;
+  }
+
+  .compact-view:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 효과 */
+  }
+
+  .compact-item {
+    text-decoration: none; /* 링크의 기본 스타일 제거 */
+    color: inherit; /* 색상 상속 */
+  }
+
+  .compact-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* 이미지 모서리 둥글게 */
+  }
+
+  .compact-title {
+    font-size: 1rem; /* 제목 크기 조정 */
+    margin: 0.5rem 0; /* 위 아래 여백 */
+  }
+
+  .compact-summary {
+    font-size: 0.85rem; /* 요약 크기 조정 */
+    color: #555; /* 요약 텍스트 색상 */
+    margin: 0.5rem 0; /* 위 아래 여백 */
+  }
+
+  .compact-event-details {
+    font-size: 0.8rem; /* 이벤트 세부사항 크기 */
+    color: #777; /* 색상 조정 */
+  }
+
+  .compact-location {
+    font-style: italic; /* 위치 텍스트 기울임 */
+  }
+
+  .compact-authors,
+  .compact-metadata,
+  .compact-links {
+    font-size: 0.75rem; /* 메타데이터 및 링크 크기 조정 */
+    margin-top: 0.2rem; /* 여백 추가 */
+  }
+</style>
