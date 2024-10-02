@@ -1,0 +1,5 @@
+{{ if eq .Params.view "card-1" }}
+  {{ partial "custom-card-1.html" . }}
+{{ else if eq .Params.view "card-2" }}
+  {{ partial "custom-card-2.html" . }}
+{{ end }}

@@ -1,13 +1,10 @@
-<div class="custom-card-view2" style="background-color: #f8f9fa; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; transition: transform 0.3s ease;">
-    <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 100%; height: 200px; object-fit: cover;">
-    <div style="padding: 20px;">
-      <h4 style="color: #333; font-size: 20px; margin-bottom: 10px;">{{ .Title }}</h4>
-      <span style="color: #666; font-size: 14px;">{{ .Date.Format "2006-01-02" }}</span>
+<!-- layouts/partials/custom-card-2.html -->
+<div class="card card-2">
+    <div class="card-header">
+      <h5>{{ .Title }}</h5>
+    </div>
+    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    <div class="card-footer">
+      <p>{{ .Params.description }}</p>
     </div>
   </div>
-  
-  <style>
-    .custom-card-view2:hover {
-      transform: translateY(-5px);
-    }
-  </style>
