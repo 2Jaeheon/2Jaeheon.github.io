@@ -20,76 +20,44 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.25s ease, box-shadow 0.25s ease;">
-  {{ with $resource }}
-  {{ $image := .Resize "550x" }}
-  {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay" style="display: block; position: relative;">
-    <img src="{{ $image.RelPermalink }}" height="auto" width="100%" alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="object-fit: cover; max-height: 300px; transition: transform 0.35s ease;">
-    <div class="hover-overlay-effect" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.2); opacity: 0; transition: opacity 0.35s ease;"></div>
-  </a>
-  {{ end }}
-  <div class="card-text" style="padding: 20px; background-color: #fff; transition: background-color 0.35s ease;">
-    <div class="section-subheading article-title mb-1 mt-3">
-        <h4 style="margin: 0;"><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
-    </div>
-
-    {{ if $item.Params.authors }}
-    <div class="article-metadata" style="font-size: 0.9em; color: #666;">
-        <div>
-            {{ partial "page_metadata_authors" $item }}
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        {{ with $resource }}
+        {{ $image := .Resize "550x" }}
+        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+        <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
+          <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+               alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
+        </a>
+        {{ end }}
+        <div class="card-text">
+          <div class="section-subheading article-title mb-1 mt-3">
+            <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
+          </div>
+          
+          {{ if $item.Params.authors }}
+          <div class="article-metadata">
+            <div>
+              {{ partial "page_metadata_authors" $item }}
+            </div>
+          </div>
+          {{ end }}
+  
+          {{ with $summary }}
+          <div class="article-style">
+            <p>{{ . }}</p>
+          </div>
+          {{ end }}
+  
+          {{ if $has_attachments }}
+          <div class="btn-links">
+            {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+          </div>
+          {{ end }}
         </div>
+      </div>
     </div>
-    {{ end }}
-
-    {{ with $summary }}
-    <div class="article-style" style="margin-top: 10px; color: #333;">
-      <p>{{ . }}</p>
-    </div>
-    {{ end }}
-
-    {{ if $has_attachments }}
-    <div class="btn-links" style="margin-top: 15px;">
-      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
-    </div>
-    {{ end }}
   </div>
 </div>
-
-<style>
-  .card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-
-  .card-image:hover .hover-overlay-effect {
-    opacity: 1;
-  }
-
-  .card-image img {
-    transition: transform 0.35s ease-in-out;
-  }
-
-  .card-image:hover img {
-    transform: scale(1.1);
-  }
-
-  .card-text:hover {
-    background-color: #f9f9f9;
-  }
-
-  @media (max-width: 768px) {
-    .card {
-      margin-bottom: 20px;
-    }
-
-    .card-image img {
-      max-height: 200px;
-    }
-
-    .card:hover {
-      transform: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-  }
-</style>
