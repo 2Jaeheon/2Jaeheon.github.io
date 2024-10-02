@@ -20,23 +20,21 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="card">
+<div class="card" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out;">
   {{ with $resource }}
   {{ $image := .Resize "550x" }}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
-    <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-         alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
+  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay" style="display: block;">
+    <img src="{{ $image.RelPermalink }}" height="auto" width="100%" alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="object-fit: cover; max-height: 300px;">
   </a>
   {{ end }}
-  <div class="card-text">
+  <div class="card-text" style="padding: 20px;">
     <div class="section-subheading article-title mb-1 mt-3">
-        <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
+        <h4 style="margin: 0;"><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
-    
 
     {{ if $item.Params.authors }}
-    <div class="article-metadata">
+    <div class="article-metadata" style="font-size: 0.9em; color: #666;">
         <div>
             {{ partial "page_metadata_authors" $item }}
         </div>
@@ -44,15 +42,40 @@
     {{ end }}
 
     {{ with $summary }}
-    <div class="article-style">
+    <div class="article-style" style="margin-top: 10px; color: #333;">
       <p>{{ . }}</p>
     </div>
     {{ end }}
 
     {{ if $has_attachments }}
-    <div class="btn-links">
+    <div class="btn-links" style="margin-top: 15px;">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
     {{ end }}
   </div>
 </div>
+
+<style>
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-image img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card-image:hover img {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px;
+    }
+
+    .card-image img {
+      max-height: 200px;
+    }
+  }
+</style>
