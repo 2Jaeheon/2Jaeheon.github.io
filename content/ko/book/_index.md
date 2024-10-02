@@ -5,5 +5,6 @@ view: cardview
 
 banner:
   caption: ''
-  image: 'code.jpg'
+  image: 'test.jpg'
+
 ---
