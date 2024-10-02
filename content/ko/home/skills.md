@@ -22,7 +22,7 @@ feature:
     name: Spring
     description: 80%
 
-  - icon: github
+  - icon: Git
     icon_pack: fab
     name: github
     description: 70%
