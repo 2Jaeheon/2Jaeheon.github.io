@@ -12,12 +12,12 @@ weight: 15 # The position of section on page
 # For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
 
-  - icon: laptop
+  - icon: play
     icon_pack: fab
     name: Java
     description: 90%
 
-  - icon: code
+  - icon: gear
     icon_pack: fab
     name: Spring
     description: 80%
