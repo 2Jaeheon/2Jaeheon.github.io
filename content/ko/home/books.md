@@ -1,40 +1,37 @@
 ---
-widget: pages
-headless: true 
-
-title: Recent Book Report
-subtitle: '최근에 읽었던 책'
-
-# Position of this section on the page
+title: My page
+type: landing
 weight: 40
 
-title: 'Project'
-subtitle: ''
-
-content:
-  filters:
-    # The folders to display content from
-    folders:
-      - books
-    tag: ''
-    category: ''
-    publication_type: ''
-    author: ''
-    featured_only: false
-    exclude_featured: false
-    exclude_future: false
-    exclude_past: false
-  offset: 3
-  # Field to sort by, such as Date or Title
-  sort_by: 'Date'
-  sort_ascending: false
-design:
-  columns: '3'
-  view: masonry
-  flip_alt_rows: false
-  background: {}
-  spacing: {padding: [0, 0, 0, 0]}
-
+sections:
+  - block: collection
+    id: posts
+    content:
+      title: Recent Posts
+      subtitle: ''
+      text: 'Check out my recent blog posts below!'
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 5
+      # Filter on criteria
+      filters:
+        # The folders to display content from
+        folders:
+          - post
+        author: ""
+        category: ""
+        tag: ""
+        publication_type: ""
+        featured_only: false
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+      # Choose how many pages you would like to offset by
+      # Useful if you wish to show the first item in the Featured widget
+      offset: 0
+      # Field to sort by, such as Date or Title
+      sort_by: 'Date'
+      sort_ascending: false
+    design:
+      # Choose a listing view
+      view: card
 ---
-
-Check out my recent blog posts below!
