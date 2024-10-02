@@ -1,41 +1,56 @@
 ---
-widget: collection # As of v5.8-dev, 'pages' is renamed 'collection'
+widget: portfolio
 headless: true  # This file represents a page section.
 
-# Put Your Section Options Here (title, background, etc.) ...
-title: Recent Blog Posts
+# ... Put Your Section Options Here (title etc.) ...
+title: My Projects
 subtitle: ''
 
-# Position of this section on the page
-weight: 40
-
 content:
-  # Filter content to display
+  # Choose which content to display in the widget
   filters:
-    # The folders to display content from
+    # Folders to display content from
     folders:
-      - books
-    tag: ''
-    category: ''
-    publication_type: ''
-    author: ''
-    featured_only: false
-    exclude_featured: false
-    exclude_future: false
-    exclude_past: false
-  # Choose how many pages you would like to display (0 = all pages)
-  count: 3
-  # Choose how many pages you would like to offset by
-  # Useful if you wish to show the first item in the Featured widget
-  offset: 0
+      - project
+    # Uncomment below to only show content with specific tags:
+#    tags:
+#      - Machine Learning
+    # Uncomment below to exclude content with specific tags:
+#    exclude_tags:
+#      - preface    
+    # Uncomment below to show specific Hugo Page kinds
+    kinds:
+      - page
+#      - section
+
   # Field to sort by, such as Date or Title
   sort_by: 'Date'
   sort_ascending: false
+
+  # Filter toolbar (optional).
+  # Add or remove as many filters (`filter_button` instances) as you like.
+  # To show all items, set `tag` to "*".
+  # To filter by a specific tag, set `tag` to an existing tag name.
+  # To remove toolbar, delete/comment all instances of `filter_button` below.
+  filter_button:
+    - name: All
+      tag: '*'
+    - name: test
+      tag: test
+    - name: test2
+      tag: test2
+
+  # Default filter toolbar button (e.g. 0 corresponds to the first `filter_button` instance above)
+  filter_default: 0
+
 design:
-  # Choose a listing view
-  view: card
   # Choose how many columns the section has. Valid values: '1' or '2'.
   columns: '1'
+  # Choose a listing view
+  view: masonry
+  # For Showcase view, flip alternate rows?
+  flip_alt_rows: false
+
 ---
 
 Check out my recent blog posts below!
