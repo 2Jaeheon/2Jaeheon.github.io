@@ -53,11 +53,11 @@ main:
     weight: 4
   - parent: Projects
     name: Web
-    url: /projects/web
+    url: /web
     weight: 50
   - parent: Projects
     name: CS
-    url: /projects/CS
+    url: /cs
     weight: 50
 
   - name: Contact
