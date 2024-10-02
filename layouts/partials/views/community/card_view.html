@@ -19,7 +19,7 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="card" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+<div class="card" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 400px; display: flex; flex-direction: column;">
   {{ with $resource }}
   {{ $image := .Resize "550x" }}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
@@ -28,20 +28,20 @@
   </a>
   {{ end }}
   
-  <div class="card-text" style="padding: 15px;">
+  <div class="card-text" style="padding: 15px; flex-grow: 1;">
     <div class="section-subheading article-title mb-1 mt-3">
-      <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="text-decoration: none; color: #333;">{{ $item.Title | markdownify | emojify }}</a></h4>
+      <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="text-decoration: none; color: var(--text-color);">{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
 
     {{ if $item.Params.authors }}
-    <div class="article-metadata" style="color: #666; font-size: 0.9em;">
+    <div class="article-metadata" style="color: var(--metadata-color); font-size: 0.9em;">
       <div>{{ partial "page_metadata_authors" $item }}</div>
     </div>
     {{ end }}
 
     {{ with $summary }}
     <div class="article-style" style="margin-top: 10px;">
-      <p style="color: #555; font-size: 0.95em; line-height: 1.6;">{{ . }}</p>
+      <p style="color: var(--summary-color); font-size: 0.95em; line-height: 1.6;">{{ . }}</p>
     </div>
     {{ end }}
 
@@ -57,6 +57,7 @@
 @media (max-width: 768px) {
   .card {
     margin-bottom: 20px;
+    max-height: none; /* 모바일에서는 높이 제한 제거 */
   }
 
   .card-text {
@@ -69,6 +70,21 @@
 
   .article-style p {
     font-size: 0.9em;
+  }
+}
+
+/* 다크모드와 라이트모드 스타일 */
+:root {
+  --text-color: #333; /* 기본 텍스트 색상 */
+  --metadata-color: #666; /* 메타데이터 색상 */
+  --summary-color: #555; /* 요약 색상 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #f0f0f0; /* 다크모드 텍스트 색상 */
+    --metadata-color: #ccc; /* 다크모드 메타데이터 색상 */
+    --summary-color: #ddd; /* 다크모드 요약 색상 */
   }
 }
 </style>
