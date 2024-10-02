@@ -20,32 +20,32 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="card">
+<div class="card shadow-lg border-0 rounded-lg overflow-hidden">
   {{ with $resource }}
   {{ $image := .Resize "550x" }}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
   <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
     <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-         alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
+         alt="{{ $item.Title }}" class="img-responsive rounded-top" loading="lazy" style="object-fit: cover; height: 250px;">
   </a>
   {{ end }}
-  <div class="card-text">
-    <div class="section-subheading article-title mb-1 mt-3">
-        <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
+
+  <div class="card-body p-4">
+    <div class="section-subheading article-title mb-2">
+        <h4 class="text-primary font-weight-bold">
+          <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a>
+        </h4>
     </div>
-    
 
     {{ if $item.Params.authors }}
-    <div class="article-metadata">
-        <div>
-            {{ partial "page_metadata_authors" $item }}
-        </div>
+    <div class="article-metadata text-muted mb-2">
+        <span class="mr-2">By {{ partial "page_metadata_authors" $item }}</span>
     </div>
     {{ end }}
 
     {{ with $summary }}
-    <div class="article-style">
-      <p>{{ . }}</p>
+    <div class="article-style mb-3">
+      <p class="text-muted">{{ . }}</p>
     </div>
     {{ end }}
 
