@@ -37,15 +37,15 @@ main:
     weight: 50  
 
   - name: Leisure
-    url: /experience
+    url: /leisure
     weight: 5
   - parent: Leisure
     name: Hobby
-    url: /experience/hobby
+    url: /hobby
     weight: 50
   - parent: Leisure
     name: Book
-    url: /experience/book
+    url: /book
     weight: 50
 
   - name: Projects
