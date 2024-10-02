@@ -8,7 +8,7 @@ type: landing
 sections:
   # A section to display blog posts
   - block: collection
-    id: section-1
+    id: section-2
     content:
       title: Hard Skills
       subtitle: 하드 스킬
