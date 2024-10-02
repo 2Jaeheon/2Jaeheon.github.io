@@ -19,8 +19,8 @@ sections:
       # Display content from the `content/post/` folder
       filters:
         folders:
-          - hardskills
           - softskills
+          - hardskills
         #recursive: true
       sort_by: 'Date'
       sort_ascending: false
@@ -29,7 +29,7 @@ sections:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
       # Choose your content listing view - here we use the `showcase` view
-      view: list
+      view: compact
       # For the Showcase view, do you want to flip alternate rows?
       #flip_alt_rows: true
 ---
