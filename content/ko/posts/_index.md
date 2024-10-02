@@ -15,6 +15,7 @@ sections:
       title: Section 1
       subtitle: All Posts
       text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
+      
       # Display content from the `content/post/` folder
       filters:
         folders:
@@ -26,7 +27,7 @@ sections:
       
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '2'
+      #columns: '1'
       # Choose your content listing view - here we use the `showcase` view
       view: compact
       # For the Showcase view, do you want to flip alternate rows?
