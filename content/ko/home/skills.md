@@ -12,12 +12,12 @@ weight: 25 # The position of section on page
 # For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
 
-  - icon: java
+  - icon: "custom/java"
     icon_pack: custom
     name: Java
     description: 90%
 
-  - icon: spring
+  - icon: "custom/spring"
     icon_pack: custom
     name: Spring
     description: 80%
