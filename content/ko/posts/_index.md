@@ -2,11 +2,6 @@
 # Page title
 title: My page
 
-banner:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
-  image: 'library.jpg'
-
-
 # Page type - we want a landing page (such as a homepage)
 type: landing
 
@@ -33,7 +28,7 @@ sections:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
       # Choose your content listing view - here we use the `showcase` view
-      view: showcase
+      view: compact
       # For the Showcase view, do you want to flip alternate rows?
       flip_alt_rows: true
 ---
