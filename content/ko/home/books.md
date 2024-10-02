@@ -38,7 +38,7 @@ content:
     - name: test
       tag: test
     - name: test2
-      tag: test2
+      tag: LAB
 
   # Default filter toolbar button (e.g. 0 corresponds to the first `filter_button` instance above)
   filter_default: 0
