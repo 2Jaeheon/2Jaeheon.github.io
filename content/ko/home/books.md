@@ -24,7 +24,7 @@ content:
     exclude_future: false
     exclude_past: false
 
-    filter_button:
+  filter_button:
     - name: All
       tag: '*'
     - name: Machine Learning
@@ -43,6 +43,7 @@ content:
   # Field to sort by, such as Date or Title
   sort_by: 'Date'
   sort_ascending: false
+
 design:
   columns: '1'
   view: masonry
