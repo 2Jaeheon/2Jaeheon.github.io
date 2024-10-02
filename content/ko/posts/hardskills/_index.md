@@ -17,7 +17,7 @@ sections:
       filters:
         folders:
           - posts/hardskills
-        recursive: true
+        #recursive: true
       sort_by: 'Date'
       sort_ascending: false
       
