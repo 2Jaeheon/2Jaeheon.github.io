@@ -2,11 +2,6 @@
 # Page title
 title: My page
 
-banner:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
-  image: 'library.jpg'
-
-
 # Page type - we want a landing page (such as a homepage)
 type: landing
 
