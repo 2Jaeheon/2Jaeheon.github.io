@@ -1,0 +1,65 @@
+{{ $item := .item }}
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+
+{{ if $item.Params.external_link }}
+  {{ $link = $item.Params.external_link }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+<div class="view-list view-list-item" style="display: flex; align-items: center;">
+  <!-- 아이콘 대신 작은 이미지 표시 -->
+  {{ if $item.Params.image }}
+    <img src="{{ $item.Params.image }}" alt="{{ $item.Title }}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%; margin-right: 15px;">
+  {{ else }}
+    <!-- 기본 이미지나 아이콘을 넣을 수 있음 -->
+    <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  {{ end }}
+
+  <div>
+    <a href="{{$link}}" {{ $target | safeHTMLAttr }} class="item-title">{{ $item.Title }}</a>
+
+    {{ if eq $item.Type "event" }}
+      <div class="article-metadata">
+        <span>{{ partial "functions/get_event_dates" $item }}</span>
+        {{ with $item.Params.location }}
+        <span class="middot-divider"></span>
+        <span>{{ . }}</span>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ if and $item.Params.authors }}
+      <div class="article-metadata">
+        {{ partial "page_metadata_authors" $item }}
+      </div>
+    {{ end }}
+  </div>
+
+  {{ if $has_attachments }}
+    <div class="btn-links">
+      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+    </div>
+  {{ end }}
+</div>
+
+<style>
+  /* 링크에 인터랙티브한 호버 효과 추가 */
+  .view-list-item a.item-title {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  .view-list-item a.item-title:hover {
+    color: #007bff;
+  }
+
+  /* 전체 행에 호버 효과 추가 */
+  .view-list-item:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+</style>
