@@ -1,10 +1,10 @@
 ---
-title: test project
+title: 데이터 사이언스 프로젝트
 
-view: card
+view: community/card
 
 banner:
-  caption: 'tetaejiawefioajef'
+  caption: ''
   image: 'test.jpg'
 
 ---
