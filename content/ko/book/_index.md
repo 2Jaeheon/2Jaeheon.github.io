@@ -1,10 +1,10 @@
 ---
 title: test project
 
-view: community/cardview
+view: card
 
 banner:
-  caption: ''
+  caption: 'tetaejiawefioajef'
   image: 'test.jpg'
 
 ---
