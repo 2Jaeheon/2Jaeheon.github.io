@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Jaeheon's Pages # Website name
-baseURL: 'https://example.com/' # Website URL
+baseURL: 'https://2jaeheon.site/' # Website URL
 
 ############################
 ## PAGE OPTIONS
@@ -13,7 +13,7 @@ baseURL: 'https://example.com/' # Website URL
 cascade:
   # Blog post options
   - _target:
-      path: /post/**
+      path: /posts/**
     editable: true
     reading_time: true
     commentable: true
