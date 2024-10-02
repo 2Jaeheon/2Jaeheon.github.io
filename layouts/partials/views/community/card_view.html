@@ -22,9 +22,9 @@
 
 <div class="card">
   {{ with $resource }}
-  {{ $image := .Fill "600x200 Center" }}
+  {{ $image := .Fill "700x200 Center" }}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
+  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image">
     <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
          alt="{{ $item.Title }}" class="img-responsive" loading="lazy">
   </a>
@@ -54,11 +54,11 @@
 
 <style>
   .card {
-    max-width: 700px; /* 가로 크기 늘리기 */
+    max-width: 700px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    margin: 1rem auto; /* 중앙 배치 */
+    margin: 1rem auto;
   }
 
   .card-image {
@@ -76,10 +76,6 @@
 
   .card:hover .card-image img {
     transform: scale(1.05);
-  }
-  
-  .card:hover .card-image::after {
-    height: 3px;
   }
 
   .card-body {
