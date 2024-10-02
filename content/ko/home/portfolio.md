@@ -41,7 +41,5 @@ design:
   flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
-custom_view_params:
-  view1: custom_view1
-  view2: custom_view2
+  
 ---
