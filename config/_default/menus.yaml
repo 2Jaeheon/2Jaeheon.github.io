@@ -45,7 +45,7 @@ main:
     weight: 50
   - parent: Leisure
     name: Book
-    url: /book
+    url: /books
     weight: 50
 
   - name: Projects
