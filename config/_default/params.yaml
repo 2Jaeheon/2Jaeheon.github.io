@@ -17,8 +17,8 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo blog theme powered by Wowchemy website builder.'
+    org_name: 'Jaeheon Lee'
+    description: '전북대학교 컴퓨터인공지능 학부 재학생 이재헌'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
