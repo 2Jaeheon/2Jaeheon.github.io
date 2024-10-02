@@ -16,7 +16,6 @@ content:
     folders:
       - hardskills
       - softskills
-      - project
     tag: ''
     category: ''
     publication_type: ''
