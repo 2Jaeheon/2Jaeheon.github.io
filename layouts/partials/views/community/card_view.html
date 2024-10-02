@@ -20,35 +20,32 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="card" style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; transition: transform 0.3s; margin-bottom: 20px; max-width: 300px;"> <!-- 카드 크기 조정 -->
+<div class="card">
   {{ with $resource }}
-  {{ $image := .Resize "300x200!" }}  <!-- 이미지 크기 조정 및 공백 없애기 -->
+  {{ $image := .Fill "400x300 Center" }}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
   <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
-    <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin: 0; display: block; width: 100%; height: auto;"> <!-- 공백 없애기 -->
+    <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+         alt="{{ $item.Title }}" class="img-responsive" loading="lazy">
   </a>
   {{ end }}
-  <div class="card-text" style="padding: 16px;">
-    <div class="section-subheading article-title mb-1">
-        <h4 style="font-size: 1.25rem; color: #333;"><a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="text-decoration: none; color: inherit;">{{ $item.Title | markdownify | emojify }}</a></h4>
-    </div>
+  <div class="card-body">
+    <h4 class="card-title">
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a>
+    </h4>
     
     {{ if $item.Params.authors }}
-    <div class="article-metadata" style="font-size: 0.875rem; color: #666;">
-        <div>
-            {{ partial "page_metadata_authors" $item }}
-        </div>
+    <div class="card-subtitle">
+      {{ partial "page_metadata_authors" $item }}
     </div>
     {{ end }}
 
     {{ with $summary }}
-    <div class="article-style" style="margin: 8px 0; color: #555;">
-      <p style="line-height: 1.5;">{{ . }}</p>
-    </div>
+    <p class="card-text">{{ . }}</p>
     {{ end }}
 
     {{ if $has_attachments }}
-    <div class="btn-links">
+    <div class="card-links">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
     {{ end }}
@@ -57,22 +54,95 @@
 
 <style>
   .card {
-    max-width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .card:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-image {
+    display: block;
+    overflow: hidden;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover .card-image img {
+    transform: scale(1.05);
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+  }
+
+  .card-title a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .card-title a:hover {
+    color: var(--color-primary);
+  }
+
+  .card-subtitle {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+  }
+
+  .card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
   @media (max-width: 768px) {
     .card {
-      margin: 10px;
+      max-width: 100%;
+    }
+  }
+
+  :root {
+    --color-text: #333;
+    --color-text-secondary: #666;
+    --color-primary: #0056b3;
+    --color-background: #fff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text: #e0e0e0;
+      --color-text-secondary: #b0b0b0;
+      --color-primary: #4a9eff;
+      --color-background: #1a1a1a;
     }
 
-    .card img {
-      width: 100%;
-      height: auto;
+    .card {
+      background-color: var(--color-background);
     }
   }
 </style>
