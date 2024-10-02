@@ -19,6 +19,7 @@ sections:
       # Display content from the `content/post/` folder
       filters:
         folders:
+          - posts
           - softskills
           - hardskills
         #recursive: true
