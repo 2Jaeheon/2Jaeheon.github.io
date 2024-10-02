@@ -1,5 +1,5 @@
 ---
-widget: portfolio
+widget: pages
 headless: true 
 
 title: Recent Book Report
@@ -12,21 +12,20 @@ title: 'Project'
 subtitle: ''
 
 content:
-  # Page type to display. E.g. project.
-  page_type: project
-
-  # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-  filter_default: 1
-
-  filter_button:
-    - name: All
-      tag: '*'
-    - name: 테스트1
-      tag: test
-    - name: 테스트2
-      tag: test2
-    - name: 테스트3
-      tag: test3
+  filters:
+    # The folders to display content from
+    folders:
+      - hardskills
+      - softskills
+      - project
+    tag: ''
+    category: ''
+    publication_type: ''
+    author: ''
+    featured_only: false
+    exclude_featured: false
+    exclude_future: false
+    exclude_past: false
 
 design:
   columns: '1'
