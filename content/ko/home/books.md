@@ -1,13 +1,15 @@
 ---
-widget: pages # As of v5.8-dev, 'pages' is renamed 'collection'
-headless: true  # This file represents a page section.
+widget: portfolio
+headless: true 
 
-# Put Your Section Options Here (title, background, etc.) ...
 title: Recent Book Report
 subtitle: '최근에 읽었던 책'
 
 # Position of this section on the page
 weight: 40
+
+title: 'Project'
+subtitle: ''
 
 content:
   # Page type to display. E.g. project.
@@ -19,11 +21,11 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Machine Learning
+    - name: 테스트1
       tag: test
-    - name: Computer Vision
+    - name: 테스트2
       tag: test2
-    - name: NLP
+    - name: 테스트3
       tag: test3
 
 design:
