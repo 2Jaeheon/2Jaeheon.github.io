@@ -1,12 +1,15 @@
 ---
 # Page title
 title: My page
-# Page type - we want a landing page (such as a homepage)
-type: landing
 
 banner:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
   image: 'library.jpg'
+
+
+# Page type - we want a landing page (such as a homepage)
+type: landing
+
 
 # Your landing page sections - add as many different content blocks as you like
 sections:
