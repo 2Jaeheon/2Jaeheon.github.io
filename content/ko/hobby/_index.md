@@ -1,10 +1,10 @@
 ---
-title: 데이터 사이언스 프로젝트
+title: 취미생활
 
 view: community/card_view
 
 banner:
-  caption: ''
-  image: 'test.jpg'
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  image: 'hobby.jpg'
 
 ---
