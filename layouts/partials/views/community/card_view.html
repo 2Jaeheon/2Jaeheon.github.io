@@ -60,13 +60,6 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    background-color: #ffffff;
-  }
-
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: #f8f8f8;
   }
 
   .card-image {
@@ -85,18 +78,7 @@
   .card:hover .card-image img {
     transform: scale(1.1);
   }
-
-  .card-image::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    background-color: rgba(0, 123, 255, 0.5);
-    transition: height 0.3s ease;
-  }
-
+  
   .card:hover .card-image::after {
     height: 5px;
   }
@@ -145,7 +127,6 @@
 
   .card-links a {
     padding: 0.3rem 0.6rem;
-    background-color: #e9ecef;
     border-radius: 4px;
     font-size: 0.85rem;
     color: #495057;
