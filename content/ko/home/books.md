@@ -26,14 +26,17 @@ content:
     exclude_featured: false
     exclude_future: false
     exclude_past: false
-
+  offset: 0
+  # Field to sort by, such as Date or Title
+  sort_by: 'Date'
+  sort_ascending: false
 design:
   columns: '1'
   view: masonry
   flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
-  
+
 ---
 
 Check out my recent blog posts below!
