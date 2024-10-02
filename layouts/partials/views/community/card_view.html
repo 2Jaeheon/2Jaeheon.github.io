@@ -19,16 +19,16 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="card" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 400px; display: flex; flex-direction: column;">
+<div class="card" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 400px; display: flex; flex-direction: column; height: 100%;">
   {{ with $resource }}
   {{ $image := .Resize "550x" }}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
   <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay" style="display: block;">
-    <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="img-responsive" style="width: 100%; height: auto; object-fit: cover;" loading="lazy">
+    <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="img-responsive" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
   </a>
   {{ end }}
   
-  <div class="card-text" style="padding: 15px; flex-grow: 1;">
+  <div class="card-text" style="padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
     <div class="section-subheading article-title mb-1 mt-3">
       <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="text-decoration: none; color: var(--text-color);">{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
@@ -40,7 +40,7 @@
     {{ end }}
 
     {{ with $summary }}
-    <div class="article-style" style="margin-top: 10px;">
+    <div class="article-style" style="margin-top: 10px; flex-grow: 1;">
       <p style="color: var(--summary-color); font-size: 0.95em; line-height: 1.6;">{{ . }}</p>
     </div>
     {{ end }}
