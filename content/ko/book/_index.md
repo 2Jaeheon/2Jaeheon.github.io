@@ -1,7 +1,7 @@
 ---
 title: test project
 
-view: cardview
+view: community/cardview
 
 banner:
   caption: ''
