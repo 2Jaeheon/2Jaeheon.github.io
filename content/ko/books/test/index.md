@@ -1,10 +1,6 @@
 ---
-title: Recommendation Systems
-summary: Write about your project here...
-tags:
-  - test
-date: 2022-01-01
-external_link: http://github.com
+title: (2024년) 학부연구생 모집
+date: 2024-03-29
 ---
 
 저희 연구실에서 학부연구생을 모집하니, 혹시 아래의 내용 중 적어도 하나라도 관심있으신 분들은 메일로 연락주시거나 혹은 직접 찾아와주시면 감사드리겠습니다.
