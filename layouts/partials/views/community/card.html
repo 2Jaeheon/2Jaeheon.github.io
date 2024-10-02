@@ -1,58 +1,30 @@
 {{ $item := .item }}
-{{ $has_attachments := partial "functions/has_attachments" $item }}
-
 {{ $link := $item.RelPermalink }}
 {{ $target := "" }}
+
 {{ if $item.Params.external_link }}
   {{ $link = $item.Params.external_link }}
   {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}
 
-{{/* Get summary. */}}
-{{ $summary := "" }}
-{{ if $item.Params.summary }}
-  {{ $summary = $item.Params.summary | markdownify | emojify }}
-{{ else if $item.Params.abstract }}
-  {{ $summary = $item.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
-{{ else if $item.Summary }}
-  {{ $summary = $item.Summary }}
-{{ end }}
-
-{{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
-
-<div class="card">
+<div class="compact-card" style="display: flex; align-items: center; border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px; margin-bottom: 15px; max-width: 400px;">
+  {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
   {{ with $resource }}
-  {{ $image := .Resize "550x" }}
-  {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
-    <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-         alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
+  {{ $image := .Resize "80x80" }}
+  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="margin-right: 15px;">
+    <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;" loading="lazy">
   </a>
   {{ end }}
-  <div class="card-text">
-    <div class="section-subheading article-title mb-1 mt-3">
-        <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
-    </div>
-    
 
-    {{ if $item.Params.authors }}
-    <div class="article-metadata">
-        <div>
-            {{ partial "page_metadata_authors" $item }}
-        </div>
-    </div>
-    {{ end }}
+  <div class="compact-card-content" style="flex: 1;">
+    <h4 class="compact-card-title" style="font-size: 1rem; margin: 0;">
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="text-decoration: none; color: #333;">{{ $item.Title | markdownify | emojify }}</a>
+    </h4>
 
-    {{ with $summary }}
-    <div class="article-style">
-      <p>{{ . }}</p>
-    </div>
-    {{ end }}
-
-    {{ if $has_attachments }}
-    <div class="btn-links">
-      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
-    </div>
+    {{ if $item.Params.summary }}
+    <p class="compact-card-summary" style="font-size: 0.85rem; color: #666; margin-top: 5px;">
+      {{ $item.Params.summary | markdownify | emojify | truncate 80 }}
+    </p>
     {{ end }}
   </div>
 </div>
