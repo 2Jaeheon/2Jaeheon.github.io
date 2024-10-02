@@ -14,7 +14,8 @@ content:
   filters:
     # The folders to display content from
     folders:
-      - posts
+      - hardskills
+      - softskills
     tag: ''
     category: ''
     publication_type: ''
