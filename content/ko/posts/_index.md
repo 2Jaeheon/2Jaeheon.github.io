@@ -20,15 +20,15 @@ sections:
         folders:
           - hardskills
           - softskills
-        recursive: true
+        #recursive: true
       sort_by: 'Date'
       sort_ascending: false
       
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
+      columns: '2'
       # Choose your content listing view - here we use the `showcase` view
       view: compact
       # For the Showcase view, do you want to flip alternate rows?
-      flip_alt_rows: true
+      #flip_alt_rows: true
 ---
