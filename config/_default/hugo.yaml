@@ -5,7 +5,7 @@
 
 title: Jaeheon's Pages # Website name
 baseURL: 'https://2jaeheon.site/' # Website URL
-
+logo: 'icon.png' # Website logo
 ############################
 ## PAGE OPTIONS
 ############################
