@@ -10,19 +10,11 @@ subtitle: '최근에 읽었던 책'
 weight: 40
 
 content:
-  # Filter content to display
-  filters:
-    # The folders to display content from
-    folders:
-      - books
-    tag: ''
-    category: ''
-    publication_type: ''
-    author: ''
-    featured_only: false
-    exclude_featured: false
-    exclude_future: false
-    exclude_past: false
+  # Page type to display. E.g. project.
+  page_type: project
+
+  # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
+  filter_default: 0
 
   filter_button:
     - name: All
@@ -33,16 +25,6 @@ content:
       tag: test2
     - name: NLP
       tag: test3
-
-  # Choose how many pages you would like to display (0 = all pages)
-  count: 3
-  # Choose how many pages you would like to offset by
-
-  # Useful if you wish to show the first item in the Featured widget
-  offset: 0
-  # Field to sort by, such as Date or Title
-  sort_by: 'Date'
-  sort_ascending: false
 
 design:
   columns: '1'
