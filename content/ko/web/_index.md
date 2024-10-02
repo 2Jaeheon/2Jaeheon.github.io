@@ -15,7 +15,10 @@ sections:
       title: Section 1
       subtitle: All Posts
       text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
-
+      filters:
+        folders:
+          - web
+        #recursive: true
       sort_by: 'Date'
       sort_ascending: false
       
