@@ -38,4 +38,3 @@ design:
   columns: '1'
 ---
 
-Check out my recent blog posts below!
