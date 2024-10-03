@@ -32,7 +32,7 @@ content:
     - name: CS
       tag: cs
     - name: WEB
-      tag: web
+      tag: web  
 
 design:
   columns: '1'
