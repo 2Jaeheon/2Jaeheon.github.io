@@ -15,7 +15,6 @@ subtitle: ''
 
 content:
   # Page type to display. E.g. project.
-  page_type: web
   page_type: cs
 
   # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
@@ -29,8 +28,8 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: CS
-      tag: cs
+    - name: Language
+      tag: language
     - name: WEB
       tag: web  
 
@@ -42,3 +41,4 @@ design:
   spacing: {padding: [0, 0, 0, 0]}
   
 ---
+<a href="www.2jaeheon.site"> CS 프로젝트가 궁금하다면 여기로 가보세요!</a>
