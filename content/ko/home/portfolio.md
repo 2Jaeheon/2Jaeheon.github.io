@@ -41,24 +41,43 @@ design:
   spacing: {padding: [0, 0, 0, 0]}
   
 ---
-<div style="text-align: center;">
-    <a href="cs" id="hoverLink" style="display: block; text-align: center; padding: 10px; font-size: 18px; color: black;">
-    CS 프로젝트가 궁금하다면 여기로 가보세요!
-    </a>
+<div class="overlay-container">
+  <a href="cs" class="overlay-link">
+    <img src="your-image.jpg" alt="CS 프로젝트 이미지" class="overlay-image">
+    <div class="overlay-text">CS 프로젝트를 보시려면 이 이미지를 눌러주세요</div>
+  </a>
 </div>
 
-<script>
-    const link = document.getElementById('hoverLink');
-    
-    link.addEventListener('mouseenter', function() {
-        link.textContent = "지금 클릭해서 확인해보세요!";
-        link.style.color = 'blue';
-        link.style.fontSize = '26px';
-    });
+.overlay-container {
+  position: relative;
+  display: inline-block;
+}
 
-    link.addEventListener('mouseleave', function() {
-        link.textContent = "CS 프로젝트가 궁금하다면 여기로 가보세요!";
-        link.style.color = 'black';
-        link.style.fontSize = '22px';
-    });
-</script>
+.overlay-image {
+  display: block;
+  width: 100%; /* 이미지가 부모 요소에 맞춰서 크기 조절 */
+  height: auto;
+}
+
+.overlay-link {
+  text-decoration: none;
+  color: white;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 반투명 검정 배경 */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay-container:hover .overlay-text {
+  opacity: 1; /* 호버 시 텍스트가 보이게 */
+}
