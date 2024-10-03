@@ -1,7 +1,7 @@
 ---
 title: 독서
 
-view: card
+view: showcase
 
 banner:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
