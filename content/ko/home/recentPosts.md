@@ -19,7 +19,6 @@ content:
     tag: ''
     category: ''
     publication_type: ''
-    author: ''
     featured_only: false
     exclude_featured: false
     exclude_future: false
@@ -39,5 +38,3 @@ design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
   columns: '1'
 ---
-
-Check out my recent blog posts below!
