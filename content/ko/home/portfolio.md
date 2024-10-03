@@ -41,4 +41,24 @@ design:
   spacing: {padding: [0, 0, 0, 0]}
   
 ---
-<a href="www.2jaeheon.site/cs"> CS 프로젝트가 궁금하다면 여기로 가보세요!</a>
+<div style="text-align: center;">
+    <a href="www.2jaeheon.site/cs" id="hoverLink" style="display: block; text-align: center; padding: 10px; font-size: 18px; color: black;">
+    CS 프로젝트가 궁금하다면 여기로 가보세요!
+    </a>
+</div>
+
+<script>
+    const link = document.getElementById('hoverLink');
+    
+    link.addEventListener('mouseenter', function() {
+        link.textContent = "지금 클릭해서 확인해보세요!";
+        link.style.color = 'blue';
+        link.style.fontSize = '20px';
+    });
+
+    link.addEventListener('mouseleave', function() {
+        link.textContent = "CS 프로젝트가 궁금하다면 여기로 가보세요!";
+        link.style.color = 'black';
+        link.style.fontSize = '18px';
+    });
+</script>
