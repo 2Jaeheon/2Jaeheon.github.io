@@ -70,7 +70,7 @@ design:
     text-align: center;
     padding: 10px;
     font-size: 16px;
-    opacity: 0;
+    opacity: 0  ;
     transition: opacity 0.5s ease;
   }
 
@@ -81,7 +81,7 @@ design:
 
 <div class="overlay-container">
   <a href="/cs" class="overlay-link">
-    <img src="your-image.jpg" alt="CS 프로젝트 이미지" class="overlay-image">
+    <img src="moveToCS.jpg" alt="CS 프로젝트 이미지" class="overlay-image">
     <div class="overlay-text">CS 프로젝트를 보시려면 이 이미지를 눌러주세요</div>
   </a>
 </div>
