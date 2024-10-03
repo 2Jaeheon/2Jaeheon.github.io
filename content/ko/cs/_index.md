@@ -1,9 +1,9 @@
 ---
-title: 독서
+title: CS
 
 view: card
 
 banner:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
-  image: 'library.jpg'
+  image: 'code.jpg'
 ---

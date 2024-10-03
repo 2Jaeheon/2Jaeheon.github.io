@@ -5,5 +5,5 @@ view: card
 
 banner:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
-  image: 'library.jpg'
+  image: 'nasa.jpg'
 ---
