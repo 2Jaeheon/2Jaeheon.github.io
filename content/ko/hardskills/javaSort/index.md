@@ -2,11 +2,6 @@
 title: 🗂️ 자바 정렬 알고리즘(sort()의 동작원리는 어떻게 될까)
 summary: 자바에서 Arrays.sort() 메소드와 Collections.sort()메소드의 동작 원리와 알고리즘(Dual Pivot Quick Sort & Tim Sort)
 date: 2024-08-25
-authors:
-  - jaeheon
-tags:
-  - Java
-  - sort
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
