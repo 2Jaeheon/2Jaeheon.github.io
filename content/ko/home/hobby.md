@@ -1,45 +1,41 @@
 ---
-# A section created with the Portfolio widget.
-# This section displays content from `content/project/`.
-# See https://docs.hugoblox.com/widget/portfolio/
-widget: portfolio
+widget: pages # As of v5.8-dev, 'pages' is renamed 'collection'
+headless: true  # This file represents a page section.
 
-# This file represents a page section.
-headless: true
+# Put Your Section Options Here (title, background, etc.) ...
+title: 취미생활
+subtitle: '현재 즐기고있는 취미입니다.'
 
-# Order that this section appears on the page.
+# Position of this section on the page
 weight: 60
 
-title: 'Project'
-subtitle: ''
-
 content:
-  # Page type to display. E.g. project.
-  page_type: hobby
+  # Filter content to display
+  filters:
+    # The folders to display content from
+    folders:
+      - books
+    tag: ''
+    category: ''
+    publication_type: ''
+    featured_only: false
+    exclude_featured: false
+    exclude_future: false
+    exclude_past: false
+  # Choose how many pages you would like to display (0 = all pages)
+  count: 3
+  # Choose how many pages you would like to offset by
 
-  # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-  filter_default: 0
-
-  # Filter toolbar (optional).
-  # Add or remove as many filters (`filter_button` instances) as you like.
-  # To show all items, set `tag` to "*".
-  # To filter by a specific tag, set `tag` to an existing tag name.
-  # To remove the toolbar, delete the entire `filter_button` block.
-  filter_button:
-    - name: All
-      tag: '*'
-    - name: Machine Learning
-      tag: ML
-    - name: Computer Vision
-      tag: CV
-    - name: NLP
-      tag: NLP
-
+  # Useful if you wish to show the first item in the Featured widget
+  offset: 0
+  # Field to sort by, such as Date or Title
+  sort_by: 'Date'
+  sort_ascending: false
 design:
+  # Choose a listing view
+  view: community/card_view
+  # Choose how many columns the section has. Valid values: '1' or '2'.
   columns: '1'
-  view: masonry
-  flip_alt_rows: true
-  background: {}
-  spacing: {padding: [0, 0, 0, 0]}
-  
 ---
+
+Check out my recent blog posts below!
