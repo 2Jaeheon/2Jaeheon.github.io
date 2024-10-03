@@ -16,6 +16,7 @@ subtitle: ''
 content:
   # Page type to display. E.g. project.
   page_type: web
+  page_type: cs
 
   # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
   filter_default: 0
@@ -28,12 +29,10 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Machine Learning
-      tag: ML
-    - name: Computer Vision
-      tag: CV
-    - name: NLP
-      tag: NLP
+    - name: CS
+      tag: cs
+    - name: WEB
+      tag: web
 
 design:
   columns: '1'
