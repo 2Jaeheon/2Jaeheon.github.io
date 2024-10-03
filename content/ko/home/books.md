@@ -3,8 +3,8 @@ widget: pages # As of v5.8-dev, 'pages' is renamed 'collection'
 headless: true  # This file represents a page section.
 
 # Put Your Section Options Here (title, background, etc.) ...
-title: Recent Blog Posts
-subtitle: ''
+title: Recent Reading Report
+subtitle: '최근에 작성한 독후감을 기록합니다'
 
 # Position of this section on the page
 weight: 50
