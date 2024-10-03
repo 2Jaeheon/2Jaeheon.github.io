@@ -3,7 +3,7 @@ widget: pages # As of v5.8-dev, 'pages' is renamed 'collection'
 headless: true  # This file represents a page section.
 
 # Put Your Section Options Here (title, background, etc.) ...
-title: Recent Reading Report
+title: 독후감
 subtitle: '최근에 작성한 독후감을 기록합니다'
 
 # Position of this section on the page
@@ -38,5 +38,3 @@ design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
   columns: '1'
 ---
-
-Check out my recent blog posts below!
