@@ -15,12 +15,12 @@ feature:
   - icon: code
     icon_pack: fas
     name: Java
-    description: 90%
+    description: 60%
 
   - icon: gear
     icon_pack: fas
     name: Spring
-    description: 80%
+    description: 60%
 
   - icon: github
     icon_pack: fab
