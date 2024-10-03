@@ -10,11 +10,10 @@ type: landing
 sections:
   # A section to display blog posts
   - block: collection
-    id: section-2
+    id: hardSkill
     content:
       title: Hard Skills
       subtitle: 하드 스킬
-      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
       # Display content from the `content/post/` folder
       filters:
         folders:
