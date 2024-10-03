@@ -41,4 +41,4 @@ design:
   spacing: {padding: [0, 0, 0, 0]}
   
 ---
-<a href="www.2jaeheon.site"> CS 프로젝트가 궁금하다면 여기로 가보세요!</a>
+<a href="www.2jaeheon.site/cs"> CS 프로젝트가 궁금하다면 여기로 가보세요!</a>
