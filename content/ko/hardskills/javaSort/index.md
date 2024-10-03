@@ -23,6 +23,7 @@ Arrays클래스는 Object클래스를 상속받아서 배열을 조작하고 검
 
 2. Collections.sort()
 Collections 클래스는 마찬가지로 Object 클래스를 상속받으며, 이 클래스는 컬렉션에서 작동하거나 컬렉션을 반환하는 정적 메서드로만 구성됩니다. Collections에는 Collection에서 작동하는 다형성 알고리즘들이 포함되어 있습니다.
+
 <br><br>
 # 기본 타입 배열의 정렬 (Dual-pivot Quick Sort)
 자바의 기본 타입 배열의 경우에는 Dual-pivot Quick Sort를 사용하여 배열을 정렬합니다.
