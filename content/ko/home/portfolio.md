@@ -39,45 +39,49 @@ design:
   flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
-  
 ---
+
+<style>
+  .overlay-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .overlay-image {
+    display: block;
+    width: 100%;
+    max-width: 400px; /* 이미지의 최대 크기를 400px로 제한 */
+    height: auto;
+    margin: 0 auto; /* 이미지를 중앙에 배치 */
+  }
+
+  .overlay-link {
+    text-decoration: none;
+    color: white;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 검정 배경 */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .overlay-container:hover .overlay-text {
+    opacity: 1; /* 호버 시 텍스트가 나타남 */
+  }
+</style>
+
 <div class="overlay-container">
-  <a href="cs" class="overlay-link">
+  <a href="/cs" class="overlay-link">
     <img src="your-image.jpg" alt="CS 프로젝트 이미지" class="overlay-image">
     <div class="overlay-text">CS 프로젝트를 보시려면 이 이미지를 눌러주세요</div>
   </a>
 </div>
-
-.overlay-container {
-  position: relative;
-  display: inline-block;
-}
-
-.overlay-image {
-  display: block;
-  width: 100%; /* 이미지가 부모 요소에 맞춰서 크기 조절 */
-  height: auto;
-}
-
-.overlay-link {
-  text-decoration: none;
-  color: white;
-}
-
-.overlay-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* 반투명 검정 배경 */
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.overlay-container:hover .overlay-text {
-  opacity: 1; /* 호버 시 텍스트가 보이게 */
-}
