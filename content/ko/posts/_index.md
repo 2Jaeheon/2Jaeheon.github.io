@@ -10,11 +10,10 @@ type: landing
 sections:
   # A section to display blog posts
   - block: collection
-    id: section-1
+    id: posts
     content:
-      title: Section 1
+      title: 블로그 포스트
       subtitle: All Posts
-      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
       
       # Display content from the `content/post/` folder
       filters:
