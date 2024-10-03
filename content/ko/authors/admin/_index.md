@@ -6,7 +6,7 @@ title: Lee Jaeheon (이재헌)
 superuser: true
 
 # Role/position
-role: 'Student'
+role: 'Jeonbuk University/Computer Sience'
 
 # Status emoji
 status:
