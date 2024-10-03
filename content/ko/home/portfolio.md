@@ -42,7 +42,7 @@ design:
   
 ---
 <div style="text-align: center;">
-    <a href="www.2jaeheon.site/cs" id="hoverLink" style="display: block; text-align: center; padding: 10px; font-size: 18px; color: black;">
+    <a href="cs" id="hoverLink" style="display: block; text-align: center; padding: 10px; font-size: 18px; color: black;">
     CS 프로젝트가 궁금하다면 여기로 가보세요!
     </a>
 </div>
@@ -53,12 +53,12 @@ design:
     link.addEventListener('mouseenter', function() {
         link.textContent = "지금 클릭해서 확인해보세요!";
         link.style.color = 'blue';
-        link.style.fontSize = '20px';
+        link.style.fontSize = '26px';
     });
 
     link.addEventListener('mouseleave', function() {
         link.textContent = "CS 프로젝트가 궁금하다면 여기로 가보세요!";
         link.style.color = 'black';
-        link.style.fontSize = '18px';
+        link.style.fontSize = '22px';
     });
 </script>
