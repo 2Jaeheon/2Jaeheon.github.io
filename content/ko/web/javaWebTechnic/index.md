@@ -1,8 +1,8 @@
 ---
-title: 자바 웹을 다루는 기술
-summary: 자바 웹을 다루는 기술 전반을 다룹니다. Servlet, JSP, Spring에 대해서 중점적으로 학습합니다.
+title: Github pages로 만든 포트폴리오
+summary: hugo 템플릿을 이용하여 Github Pages와 github Actions를 이용한 정적 배포 포트폴리오 사이트
 tags:
   - web
-date: 2024-08-01
-external_link: https://github.com/2Jaeheon/java-web-practice
+date: 2024-09-25
+external_link: https://github.com/2Jaeheon/2Jaeheon.github.io
 ---
