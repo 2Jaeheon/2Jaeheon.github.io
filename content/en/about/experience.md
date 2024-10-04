@@ -22,34 +22,34 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: 고등학생
-    company: 전주 한일고등학교
+  - title: High school students
+    company: Jeonju Hanil High School
     company_url: 'https://school.jbedu.kr/hanilgo/'
     company_logo: school
-    location: 전북특별자치도 전주시
+    location: Jeonbuk State 
     date_start: '2017-03-02'
     date_end: '2017-03-02'
     description: |
-        * 독서 토론 동아리
-        * 교외 봉사 동아리
+        * Book discussion circles
+        * Extracurricular service clubs
 
-  - title: 컴퓨터공학과
-    company: 전주대학교
+  - title: Computer Science
+    company: Jeonju University
     company_url: 'https://www.jj.ac.kr/cse/index.jsp'
     company_logo: university
-    location: 전북특별자치도 전주시
+    location: Jeonbuk State 
     date_start: '2020-03-02'
     date_end: '2024-01-30'
-    description: 전주대 컴퓨터 공학과 재학 중 편입하였음
+    description: Transferring while in school
 
-  - title: 컴퓨터인공지능학부
-    company: 전북대학교
+  - title: Computer Science and Artificial Intelligence
+    company: Jeonbuk National University
     company_url: 'https://csai.jbnu.ac.kr/csai/index.do'
     company_logo: university
-    location: 전북특별자치도 전주시
+    location: Jeonbuk State 
     date_start: '2024-03-02'
     date_end: ''
-    description: 현재 전북대 컴퓨터 인공지능 학부 재학중
+    description: Undergraduate
 
 design:
   columns: '1'
