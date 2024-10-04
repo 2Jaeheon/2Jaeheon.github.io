@@ -1,6 +1,6 @@
 ---
-title: 자바 프로그래밍 언어
-summary: 웹 백엔드를 학습하기 전 토대가 되는 자바 프로그래밍 언어 학습에 관한 내용
+title: Java programming language
+summary: About learning the Java programming language as a foundation before learning web backend.
 tags:
   - language
 date: 2024-05-01

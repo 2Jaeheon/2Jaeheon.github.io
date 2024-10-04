@@ -13,7 +13,7 @@ sections:
     id: hardSkill
     content:
       title: Hard Skills
-      subtitle: 하드 스킬
+      subtitle: Write technical articles.
       # Display content from the `content/post/` folder
       filters:
         folders:

@@ -1,112 +1,123 @@
 ---
-title: 🗂️ 자바 정렬 알고리즘(sort()의 동작원리는 어떻게 될까)
-summary: 자바에서 Arrays.sort() 메소드와 Collections.sort()메소드의 동작 원리와 알고리즘(Dual Pivot Quick Sort & Tim Sort)
+title: 🗂️ Java sorting algorithms (how sort() works)
+summary: How Arrays.sort() and Collections.sort() methods work in Java (Dual Pivot Quick Sort & Timed Sort)
 date: 2024-08-25
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
 
-# 이런 분들이 읽으시면 좋아요
-자바 언어의 정렬 메서드들을 사용하던 도중 어떤 알고리즘을 사용하는지에 관한 궁금증이 생겼습니다. 학부과정 중 자료구조 알고리즘 시간에 다양한 정렬 방법들에 대해서 학습하였지만, 과연 자바 내에서는 어떤 정렬을 사용하고 어떻게 동작하는지에 관해서는 몰랐기 때문에 이에 대해서 자세히 알아보고자 글을 작성하였습니다. 저처럼 자바에서 sort가 어떻게 동작하는지 궁금하신 분들이 도움이 되셨으면 합니다.
+# This is for people like this
+While using the sort methods in Java, I was curious about the algorithm used. I learned about various sorting methods in my undergraduate data structure algorithms course, but I didn't know which sort is used in Java and how it works, so I wrote this article to learn more about it. I hope you find this article helpful if you are curious about how sort works in Java.
 <br><br>
 
 # 자바의 정렬 메소드
 자바의 정렬 메소드는 대표적으로 두 가지 있습니다.
 
+# Sorting Methods in Java
+There are two main sorting methods in Java.
+
 1. Arrays.sort()
-Arrays클래스는 Object클래스를 상속받아서 배열을 조작하고 검색하는 등의 다양한 방법들이 포함되어 있습니다. 기본적으로 sort()시 오름차순으로 작동하며, 자세한 알고리즘은 바로 밑에서 다루겠습니다.
+The Arrays class inherits from the Object class and contains various methods for manipulating and searching arrays. By default, sort() works in ascending order, and we'll cover the detailed algorithm directly below.
 
 2. Collections.sort()
-Collections 클래스는 마찬가지로 Object 클래스를 상속받으며, 이 클래스는 컬렉션에서 작동하거나 컬렉션을 반환하는 정적 메서드로만 구성됩니다. Collections에는 Collection에서 작동하는 다형성 알고리즘들이 포함되어 있습니다.
+The Collections class similarly inherits from the Object class, which consists of only static methods that operate on collections or return collections. Collections contains polymorphic algorithms that operate on Collections.
+
 
 <br><br>
-# 기본 타입 배열의 정렬 (Dual-pivot Quick Sort)
-자바의 기본 타입 배열의 경우에는 Dual-pivot Quick Sort를 사용하여 배열을 정렬합니다.
+# Sorting a primitive type array (Dual-pivot Quick Sort)
+For Java's primitive type arrays, we use the Dual-pivot Quick Sort to sort the array.
 
-Single Pivot Quick Sort는 배열에서 피벗을 뽑아 배열을 분할해서 피벗에 남겨진 모든 요소가 피벗보다 작거나 같고 피벗 오른쪽에 있는 모든 요소가 피벗보다 크도록 만드는 정렬 기법입니다.
+Single Pivot Quick Sort is a sorting technique that pulls a pivot from the array and splits the array so that all elements left at the pivot are less than or equal to the pivot and all elements to the right of the pivot are greater than the pivot.
 
-Dual-Pivot Quick Sort는 Pivot Quick Sort를 개선한 방법으로 배열의 양 끝 피벗 두 개를 가져와서 사용함으로써 기존의 Quick Sort의 기존 성능을 개선한 방법입니다.
+Dual-Pivot Quick Sort is a refinement of Pivot Quick Sort that improves on the traditional performance of Quick Sort by taking the two pivots at either end of the array and using them.
 
-배열을 세 부분으로 분리한 다음 첫 번째 부분에서는 모든 요소가 왼쪽 피벗보다 작고, 두 번째 부분에서는 모든 요소가 왼쪽 피벗보다 크거나 같고 오른쪽 피벗보다 작거나 같고, 세 번째 부분에서는 모든 요소가 오른쪽 피벗보다 크게 합니다. 그런 다음 아래 막대에서 볼 수 있듯이 두 피벗을 적절한 위치로 이동한 후 이 방법을 사용하여 세 부분을 재귀적으로 퀵 정렬하기 시작합니다. 자세한 원리가 시각적으로 궁금하신 분들은 다음의 글을 읽어보시길 바랍니다.
+It works by separating the array into three parts, and then in the first part, all elements are less than the left pivot, in the second part, all elements are greater than or equal to the left pivot and less than or equal to the right pivot, and in the third part, all elements are greater than the right pivot. Then, as you can see in the bar below, it moves the two pivots to the appropriate positions and begins to recursively Quick Sort the three parts using this method. If you're interested in a visual representation of how this works, you might want to read the following article.
 
-자바 공식 문서에 따르면 다음과 같은 성능을 제공한다고 합니다.
-Dual-Pivot Quick Sort 알고리즘은 다른 quicksort가 2차 성능으로 저하되는 많은 데이터 셋에서 O(n log(n)) 성능을 제공하며, 일반적으로 기존(1-pivot) Quicksort 구현보다 빠르다고 알려져 있습니다.
+According to the official Java documentation, it provides the following performance
+The Dual-Pivot Quick Sort algorithm delivers O(n log(n)) performance on many datasets where other quicksorts degrade to quadratic performance, and is generally recognized as faster than traditional (1-pivot) Quicksort implementations.
 
-Dual Pivot Quick Sort가 성능이 향상되는 이유
-캐시 성능의 향상: 알고리즘의 비용을 비교와 swap의 횟수로만 상정한다면 Single Pivot Quick Sort보다 Dual Pivot Quick Sort가 좋지 않다고 말할 수 있지만, 현대 컴퓨터는 캐시를 사용하기 때문에 Dual Pivot Quick Sort의 분할 전략으로 인해 캐시 미스가 적어 더 나은 캐시 성능을 보이는 경우가 많습니다.
+Reasons why Dual Pivot Quicksort improves performance
+Improved cache performance: If the cost of the algorithm were just the number of comparisons and swaps, we could say that Dual Pivot Quick Sort is not better than Single Pivot Quick Sort, but since modern computers use cache, Dual Pivot Quick Sort often has better cache performance due to fewer cache misses due to its partitioning strategy.
+
 <br><br>
 
-# 객체 타입 배열의 정렬 (Tim Sort)
-객체 타입의 배열은 Tim sort라는 정렬 알고리즘을 사용하여 정렬합니다. Tim Sort는 2002년 만들어져 2009년 자바에 도입되었습니다.
+# Sorting an array of object types (Tim Sort)
+Arrays of object types are sorted using a sorting algorithm called Tim sort. Tim Sort was created in 2002 and introduced to Java in 2009.
 
-TimSort는 병합 정렬과 삽입 정렬의 장점을 결합한 하이브리드 정렬 알고리즘입니다. 실제 데이터의 다양한 특성에 잘 대응하도록 설계되었으며, 입력 데이터의 특성에 따라 전략을 조정합니다.
+TimSort is a hybrid sorting algorithm that combines the best of both merge and insertion sorts. It is designed to respond well to different characteristics of real-world data, and adjusts its strategy based on the characteristics of the input data.
 
-TimSort에서는 배열을 작은 부분으로 쪼개는데 이 쪼개진 단위를 Run이라고 부릅니다. Run의 크기는 32 ~ 64 사이입니다. 자연적으로 정렬된 부분을 찾아 이를 Run으로 사용합니다. 그리고 전체 배열 길이를 바탕으로 최적의 Run 길이를 계산합니다.
+TimSort splits the array into smaller parts, which we call runs. Runs can be between 32 and 64 in size. It finds naturally sorted parts and uses them as runs, and calculates the optimal run length based on the total array length.
 
-이후 각 런을 삽입 정렬로 정렬합니다. 삽입 정렬은 원래 작은 배열에서 효율적이므로 런 크기에 적합합니다. 그리고 정렬된 Run들을 Merge Sort(병합 정렬)을 사용하여 더 큰 Run으로 병합시킵니다. 이 과정에서는 갤로핑(Galloping)과 병합 균형을 통해서 최적화 기법들을 사용합니다.
+Each run is then sorted with an insertion sort. Insertion sort is naturally efficient on small arrays, so it's a good fit for our run size. We then use Merge Sort to merge the sorted Runs into a larger Run. In this course, we'll use two optimization techniques, Galloping and Merge Balance.
 
-Galloping: 한 런에서 연속적으로 요소를 선택할 때 사용되는 기법으로, 병합 속도를 향상시킵니다.
-병합 균형: 비슷한 크기의 런을 병합하여 효율성을 높입니다.
+Galloping: A technique used to select elements from a run in succession to speed up the merge.
+Merge balancing: Merges runs of similar size to increase efficiency.
 
-병합되지 않은 Run들은 스택에 따로 저장하고 스택의 Run들이 특정 조건(예를 들어 오름차순)을 만족시키도록 유지합니다. 그리고 위 과정을 모든 Run이 처리될 때까지 계속해서 반복합니다.
+Unmerged runs are set aside in a stack, and the runs in the stack are kept to satisfy certain conditions (e.g., ascending order), and the process is repeated over and over again until all runs have been processed.
 
-더 자세한 원리를 알고싶다면 다음의 링크를 참고해서 확인해보시길 바랍니다.
-[Tim Sort의 원리](https://skerritt.blog/timsort/)
+Translated with www.DeepL.com/Translator (free version)
+
+
+If you're interested in learning more about how it works, you can check out the following links.
+[Tim Sort의 원리](https://skerritt.blog/timsort/)<br>
 [Tim Sort 네이버 D2 블로그](https://d2.naver.com/helloworld/0315536) 
 
 
-# 왜 Tim Sort랑 Dual-Pivot Quick Sort를 나눠서 쓰는데??
-Tim Sort는 기존 내부 구조가 있는 배열에서 매우 뛰어난 성능을 보이며, 안정적인 정렬을 유지하면서 매우 빠른 성능을 보입니다. 시간 복잡도는 기존의 효율적인 정렬 방법인 Merge Sort와 동일한 O(n log n)이지만, 실제 데이터에서는 내부 구조가 있는 경우 실제로는 더 나은 성능을 보입니다.
+# Why use Tim Sort vs. Dual-Pivot Quick Sort?
+Tim Sort performs very well on arrays with existing internal structure, and is very fast while maintaining a stable sort. Its time complexity is O(n log n), the same as Merge Sort, a traditional efficient sorting method, but it actually performs better on real-world data with internal structure.
 
-기본 타입의 경우에는 연산이 빠르고 단순하며, 크기가 작으며 고정되어 있으므로 메모리 사용 예측이 가능합니다. 또한 객체 타입은 크기가 다양하고, 메모리 사용이 더욱 복잡하며, 비교 연산이 더 복잡하고 시간이 걸릴 수 있습니다. 이런 상황에서는 Tim Sort는 더욱 빠르고 메모리를 효율적으로 관리합니다.
+For primitive types, the operation is fast and simple, and the size is small and fixed, so memory usage is predictable. Object types can vary in size, memory usage is more complex, and comparison operations can be more complex and time-consuming. In these situations, Tim Sort is faster and manages memory more efficiently.
 
-위와 같은 이유로 Tim Sort와 Dual-Pivot Quick Sort를 나눠서 사용합니다.
+For the above reasons, Tim Sort and Dual-Pivot Quick Sort are used separately.
 
-다른 정렬 방법 말고 항상 sort() 메소드를 사용하는 것이 좋을까??
-항상 그렇지는 않습니다. 데이터에 따라서 다른 메소드를 사용해야 합니다. 데이터와 크기와 특성에 따른 분류는 다음과 같습니다.
+Should I always use the sort() method instead of other sorting methods?
+Not always. Depending on your data, you should use different methods. Here are some examples of data and its categorization by size and characteristics
 
-- 데이터 크기에 따른 분류
-- 작은 데이터 세트
 
-삽입 정렬(Insertion Sort)이 효과적입니다.
-간단한 구현과 빠른 실행 시간으로 작은 배열에 적합합니다.
-중간 크기 데이터 세트
-
-퀵 정렬(Quick Sort)이 일반적으로 좋은 선택입니다.
-평균적으로 O(NlogN)의 시간 복잡도를 가지며, 대부분의 경우에 효율적입니다.
-대규모 데이터 세트
-
-병합 정렬(Merge Sort)이 안정적인 성능을 제공합니다.
-최악의 경우에도 O(NlogN)의 시간 복잡도를 보장합니다.
-데이터 특성에 따른 분류
-거의 정렬된 데이터
-
-삽입 정렬이 매우 효율적입니다.
-이미 정렬된 부분을 활용하여 빠르게 정렬을 완료할 수 있습니다.
-중복이 많은 데이터
-
-퀵 정렬의 변형인 3-way 퀵 정렬이 효과적입니다.
-중복 요소를 효율적으로 처리할 수 있습니다.
-안정성이 필요한 경우
-
-병합 정렬이 적합합니다.
-동일한 값을 가진 요소들의 상대적 순서를 유지합니다.
-메모리 제약이 있는 환경
-
-힙 정렬(Heap Sort)이 좋습니다.
-추가 메모리를 거의 사용하지 않고 정렬을 수행할 수 있습니다.
+## Classification by Data Size
+### Small Data Sets
+Insertion Sort is effective.
+It is suitable for small arrays with simple implementation and fast execution time.
+<br>
+### Medium-Sized Data Sets
+Quick Sort is generally a good choice.
+It has an average time complexity of O(NlogN) and is efficient in most cases.
+<br>
+## Large Data Sets
+Merge Sort provides stable performance.
+It guarantees a time complexity of O(NlogN) even in the worst case.
+<br><br>
+## Classification by Data Characteristics
+### Nearly Sorted Data
+Insertion Sort is very efficient.
+It can quickly complete the sort by utilizing already sorted parts.
+<br>
+### Data with Many Duplicates
+3-way Quick Sort, a variant of Quick Sort, is effective.
+It can efficiently handle duplicate elements.
+<br>
+### Cases Requiring Stability
+Merge Sort is suitable.
+It maintains the relative order of elements with the same value.
+<br>
+### Environments with Memory Constraints
+Heap Sort is good.
+It can perform sorting with almost no additional memory usage.
 <br><br>
 
-# 병렬정렬 (parallelSort())
-병렬 정렬은 여러 프로세서 또는 코어를 활용하여 동시에 정렬 작업을 수행하는 기법입니다. 병렬 분할 정복 방법을 사용하여 정렬합니다. 자바 내에서는 Arrays.parallelSort() 메소드를 통해서 구현합니다.
 
-동작 원리는 다음과 같습니다.
+# parallelSort (parallelSort())
+Parallel sorting is a technique that utilizes multiple processors or cores to perform sorting operations simultaneously. It uses a parallel divide-and-conquer method to sort. In Java, we implement it through the Arrays.parallelSort() method.
 
-배열을 재귀적으로 하위 배열로 분할합니다.
-이 하위 배열들은 여러 스레드에 의해 병렬로 정렬됩니다.
-정렬된 하위 배열들은 최종 정렬된 배열을 생성하기 위해 병합됩니다. 그렇다면 병합정렬은 왜 있고 왜 사용할까
-일반적으로 배열의 크기가 10000 이상일 때 약 2배 이상의 성능 차이를 보일 수 있습니다. 또한 parallelSort()는 Fork/Join 프레임워크를 사용하여 다중 코어 프로세서의 성능을 활용합니다. 이는 단일 스레드만 사용하는 일반 sort()와 달리 여러 스레드를 동시에 사용하여 정렬을 수행합니다.
+Here's how it works
+
+It recursively splits the array into subarrays.
+These subarrays are sorted in parallel by multiple threads.
+The sorted subarrays are merged to produce the final sorted array. So why is there a merge sort and why use it?
+In general, you can see a performance difference of about 2x or more when the size of the array is greater than 10000. Also, parallelSort() utilizes the Fork/Join framework to take advantage of the power of multi-core processors. It uses multiple threads simultaneously to perform the sort, unlike regular sort(), which only uses a single thread.
+
 <br><br>
 
-# 마침
-자바에서 각 정렬에 대해서 이론적으로 알아보았으므로, 다음 글에서는 자바에서 Dual-Pivot Quick Sort와 Tim Sort에 대해서 직접적으로 코드를 통해 동작 원리에 대해서 더욱 자세히 서술하도록 하겠습니다. 긴 글 읽어주셔서 감사합니다.
+
+# Finish
+Now that we've covered each sort in Java theoretically, in the next article, we'll go into more detail about how Dual-Pivot Quick Sort and Tim Sort work in Java directly in code. Thank you for reading this long article.

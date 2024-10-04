@@ -12,7 +12,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: 블로그 포스트
+      title: Blog Posts
       subtitle: All Posts
       
       # Display content from the `content/post/` folder

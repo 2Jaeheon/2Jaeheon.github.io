@@ -1,30 +1,31 @@
 ---
-title: 독서
+title: Reading
 date: 2024-03-29
 ---
 
-책과 변하지 않는 것들을 좋아합니다. 모든 장르를 가리지 않고 읽는 편입니다. 독서를 통해 새로운 관점과 다양한 아이디어를 간접적으로 경험한다는 점을 좋아합니다. 또한 일상의 시간들을 책과 함께 소소하게 보내면서 여유를 찾고, 때때로는 이야기에 집중하며 스트레스를 해소하기도 합니다.
+
+I love books and things that don't change. I read all kinds of genres. I love the fact that reading exposes me to new perspectives and different ideas second-hand. I also like to spend a little time with a book in my daily routine to relax and sometimes relieve stress by immersing myself in a story.
 
 
-# 지금까지 읽은 책 리스트
-- 메모독서법
-- 여행의 이유
-- 데미안
-- 게으른 완벽주의자를 위한 심리학
-- 트렌드코리아 2023
-- 우리가 빛의 속도로 갈 수 없다면
-- 인스타 브레인
-- 진작 이렇게 책을 읽었더라면
-- 팩트풀니스
-- 니체의 자존감 수업
-- 어떤 생각들은 나의 세계가 된다.
-- 눈사람 자살사건
-- 인간실격
-- 미움받을 용기
-- 멋진 신세계
-- 노랜드
-- 만화로 보는 3분 철학
+# Books I've read so far
+- How I read with notes
+- Reasons for traveling
+- Damien.
+- Psychology for the Lazy Perfectionist
+- Trends Korea 2023
+- If we can't travel at the speed of light
+- The Instagram Brain
+- If Only I'd Read This Book Earlier
+- The Art of Being Human
+- Nietzsche's Self-Esteem Lesson
+- Some Thoughts Become My World
+- The Snowman Suicide
+- Human Disqualification
+- The Courage to Hate
+- Brave New World
+- Norland
+- 3 Minute Philosophy in Comics
 
-# 현재 읽고있는 책
-- 딸아, 돈 공부 절대 미루지 마라
-- 수레바퀴 아래서
+# books currently reading
+- Daughter, Never Put Off Studying Money
+- Under the Wheel

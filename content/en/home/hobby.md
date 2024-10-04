@@ -3,8 +3,8 @@ widget: pages # As of v5.8-dev, 'pages' is renamed 'collection'
 headless: true  # This file represents a page section.
 
 # Put Your Section Options Here (title, background, etc.) ...
-title: 취미생활
-subtitle: '현재 즐기고있는 취미입니다.'
+title: Hobbies
+subtitle: 'It's a hobby I'm currently enjoying.'
 
 # Position of this section on the page
 weight: 60

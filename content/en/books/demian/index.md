@@ -3,22 +3,14 @@ title: 데미안
 date: 2023-02-24
 ---
 
+I've been familiar with the book Damien since I was a kid. It is a familiar and famous work of literature that many adults and book lovers have passed through at one time or another. However, the prejudice that it would be difficult to read, and the pressure of the pile of books to be read, prevented me from reaching for this book. However, recently, the keyword 'growth' has served as the centerpiece of my journey to find myself fully. It's often said that when choosing a book, you should read something that will help you, so maybe it was fate that I chose Damien because I was craving growth.
 
-상태: 독서노트<br>
-별점: ★★★★★<br>
-저자: 헤르만 헤세<br>
-읽은 기간: 2023년 2월 13일 → 2023년 2월 24일<br>
-키워드: 고전문학, 민음사세계문학, 철학<br>
-한 줄 평: 나에게로 이르는 길<br>
-등록일: 2024년 2월 23일 오후 9:10<br>
-분류: 문학<br>
 
-어렸을 적부터 '데미안'이라는 책에 대해서는 익히 알고 있었다. 이 책은 수많은 어른들과 책을 좋아한다는 사람들이 한 번쯤은 거쳐갔던 문학작품으로, 그만큼 익숙하고 유명한 작품이었다. 그러나 막상 이 책을 읽기에는 어려울 것 같다는 편견과, 앞으로 읽어야 할 책들이 쌓여있다는 압박감은, 내가 이 책에 손이 가지 않도록 했다. 그러나 근래에 들어서 '성장'이라는 키워드가 나를 온전히 나를 찾아가는 여정의 구심점 역할을 해주었다. 흔히 책을 선정할 때 '자신에게 도움이 되는 책'을 해야 한다고 하지 않은가. 그래서 성장을 갈망하던 내가 데미안을 선택한 것은 사실 운명과도 같이 간택당한 걸지도 모르겠다.
+The book begins with two worlds, one good and one evil. The main idea of the novel is that Sinclair, the protagonist, meets Damien, tastes the two extremes, reconciles them, and eventually finds his way to himself. As the key word is 'growth', it is a rather clichéd plot of an ordinary human being facing hardships and adversity and overcoming them, but the author's style of writing is so fluid and vivid that it feels like a return to childhood. The embarrassment, wandering, and falling in love were so vivid that it was as if I could see myself as a child, recreating the past in front of my eyes. It was like a trip to a different world. As I closed the book, I felt a strange and indescribable emotion overwhelm me as I experienced the protagonist's growth and expansion into my own.
 
-이 책은 선과 악, 두 세계로 나누어져 시작된다. 주인공 싱클레어는 데미안을 만나 양 극단의 세계를 맛보고, 융화시켜, 결국 자신에게 이르는 길로 나아간다는 것이 이 소설의 주된 내용이다. 핵심 키워드가 '성장'인 만큼 평범한 인간이 고난과 역경을 마주하고 이를 극복해내는 주인공이라는 다소 진부한 플롯이기는 하다만, 내용을 서술하는 저자의 문체는 너무나 유려하고 생생해 마치 어린시절로 회귀하는 것처럼 느껴진다. 부끄럽기도 하고 방황하기도 하며, 사랑에 빠지기도 하는 모습은 꼭 마치 어린 시절 필자의 모습을 눈 앞에 과거의 영상으로 그대로 재현시키는 것 같았다. 마치 세로운 세계로의 여행이었다. 책을 덮을 때는 주인공의 성장이 곧 나 자신으로 연결되며 확장되어지는 경험을 통해 기묘하고 형용하기 어려운 감정이 엄습했다.
 
-하지만 책의 이름이 '데미안'인 이유에 대해서는 의문이 있다. 주인공의 이름은 싱클레어인데 말이다. 그래서 나름의 해석을 붙여보기로 했다. 첫번째로는 헤르만 헤세가 '데미안'이라는 작품을 에밀 싱클레어라는 이름으로 세상에 내놓았기 때문이라는 관점이다. 두번째로는 세상을 살아가며 본인의 성장을 위해서는 나를 이끌어주는 조력자가 있어야만 한다는 의미를 담은 해석이다. 동양에는 ‘줄탁동시’라는 사자성어가 있다. 알이 부화할 때 어미새는 알을 바깥에서 깨고, 병아리는 알 속에서 부리로 알을 깬다는 이야기이다. 이처럼 개인의 각성은 결국 혼자서 하는 일이지만 주변의 도움이 필수불가결하다는 의미로도 생각해볼 수 있을 것이다. 물론 아무런 의미 없이 '데미안'이라는 이름을 사용했을 수도 있다.
+However, there is a question as to why the book is named Damien. The main character's name is Sinclair. So I decided to come up with my own interpretation. The first is that Hermann Hesse wrote Damien under the name of Emile Sinclair. The second interpretation is that in order to grow in the world, you must have a helper to guide you. In the East, there is a lion's name called 'Zultakdongshi'. When an egg hatches, the mother bird breaks the egg outside, and the chick breaks the egg inside with its beak. In this way, you can think of it as a way of saying that personal awakening is a solo endeavor, but that help from others is indispensable. Of course, the name “Damien” could have been used without any meaning.
 
-책에서는 니체의 사상을 많이 엿볼 수 있었다. 아폴론적 세계와 디오니소스적 세계, 힘에의 의지, 아모르파티 같은 철학적 사상이 깊게 스며들어 있었다. 그렇기에 니체라는 철학자에 대해 잘 알고 있다면 더욱 다채롭게 책을 읽을 수 있다. 그리고 칼 융의 분석심리학에 영향을 많이 받았다는 점도 확인할 수 있다. 이렇게 여러가지 지식을 습득할 수 있는 것은 참으로 값진 일에 분명하다. 독서를 통해 여러 사람의 철학에 대해 고찰하고, 이를 자신만의 사상으로 발전시켜 소신껏 살아가는 것, 이는 더할나위 없이 아름다운 일이다. 그렇기에 많은 사람들이 독서를 하는 것이리라. '데미안'을 통해 독서의 의미에 대해서도 생각해볼 수 있어 참으로 뜻깊었다.
+The book gives us a glimpse into many of Nietzsche's ideas. The Apollonian and Dionysian worlds, the will to power, Amorphati, and other philosophical ideas are deeply embedded in the book. Therefore, if you are familiar with Nietzsche, you can enjoy the book even more. He was also heavily influenced by the analytical psychology of Carl Jung. It's clear that this kind of knowledge is invaluable. It is a beautiful thing to think about the philosophies of different people through reading, to develop your own ideas, and to live your life to the fullest. That is why many people read. It was very meaningful to think about the meaning of reading through Damien.
 
-선과 악, 정신과 육체, 이성과 본능. 이처럼 이분법적으로 분리되어 있는 개념들에 대해 우리는 종종 실수를 하고는 한다. 일종의 편향된 사고를 하는 것 같다. 세상을 바라볼 때 이항대립되는 주제로 세상을 평가하고 해석한다. 마치 이성과 감정만을 두고 사람을 평가해내는 것처럼 말이다. 주인공 싱클레어는 선의 세계에 있었지만, 악의 세계를 접하고 이를 통합시켜내는 과정을 통해 성장을 이루었다. 이처럼 '데미안'의 주인공 싱클레어가 한 것처럼 두 양립하는 개념을 통합시키는 변증법적 과정을 통해 우리는 성장의 길로 오를 수 있을 것이다.
+Good and evil, mind and body, reason and instinct. We often make mistakes when it comes to these dichotomous concepts. It's a kind of biased thinking. When we look at the world, we evaluate and interpret it in terms of binary opposites. It is as if we evaluate people based on reason and emotion alone. Sinclair, the protagonist, was in a world of goodness, but he grew through the process of encountering and integrating the world of evil. In the same way, we can grow through the dialectical process of integrating two incompatible concepts, just as Sinclair did in Damien.

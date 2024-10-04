@@ -1,5 +1,5 @@
 ---
-title: 독서
+title: Reading
 
 view: community/compact_view
 

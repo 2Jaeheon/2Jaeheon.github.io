@@ -16,7 +16,7 @@ design:
 
 content:
   slides:
-    - title: 👋 웹 페이지에 오신 것을 환영합니다.
+    - title: 👋 Welcome to the webpage.
       align: center
       background:
         position: right
@@ -24,8 +24,8 @@ content:
         brightness: 0.3
         media: code.jpg
         fit: cover
-    - title: 성장 스토리를 만나보세요!
-      content: 이 곳에는 저의 성장 이야기가 잔뜩 담겨있습니다.
+    - title: Meet the growth story!
+      content: There's a lot of my growth story in here.
       align: left
       background:
         position: center
@@ -33,8 +33,8 @@ content:
         brightness: 0.3
         media: github.jpg
         fit: cover
-    - title: 저와 함께하실 분을 구합니다.
-      content: 함께하실 분은 아래의 버튼을 눌러 함께해요!
+    - title: I'm looking for someone to join me.
+      content: If you'd like to join us, click the button below to join us!
       align: right
       background:
         position: center

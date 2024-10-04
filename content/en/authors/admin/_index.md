@@ -18,7 +18,7 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 웹 백엔드 개발자를 희망하는 전북대학교 컴퓨터 인공지능 학부 학생 이재헌입니다.
+bio: I'm Jaeheon Lee, a computer science and artificial intelligence student at Jeonbuk National University who wants to become a web backend developer.
 
 #interests:
 #- Artificial Intelligence
@@ -65,12 +65,13 @@ social:
 #email: ""
 ---
 
-저는 웹 백엔드 개발자로서의 커리어를 준비 중인 이재헌입니다. 현재 전북대학교 컴퓨터 인공지능 학부에 재학 중이고, 자바와 스프링, 스프링부트 프레임워크를 집중적으로 공부하며 안정적이고 효율적인 백엔드 시스템을 구현하는 것을 목표로 하고 있습니다. 또한 좋은 코드를 작성하기 위해서 객체지향에 대한 공부 중에 있으며, 유지보수가 용이한 코드를 작성하는 것을 목표로 하고 있습니다.
-
-대학교에서 다양한 컴퓨터 지식들을 학습하고 있습니다. 특히 웹과 데이터를 다루는 부분에 있어서 매력을 느끼고 있으며, 이러한 지식들을 바탕으로 프로젝트를 진행하고 있습니다. 
-
-저는 팀워크와 커뮤니케이션을 중요하게 생각하고, 협업 과정에서 상호 발전이 가능한 개발자가 되고 싶습니다. 앞으로도 정진하여 문제해결력을 갖추고, 성장할 수 있는 개발자가 되겠습니다.
+My name is Jaeheon Lee and I am preparing for a career as a web backend developer. Currently, I am a student at Chonbuk National University, majoring in Computer Science and Artificial Intelligence, focusing on Java, Spring, and Springboot frameworks, and aiming to implement stable and efficient backend systems. I am also studying object orientation to write good code, and aim to write maintainable code.
 
 
-저의 이력서를 받으시려면 아래 버튼을 눌러주세요 <br>
+I am learning various computer knowledge at university, and I am especially fascinated by the web and data, and I am working on projects based on these knowledge. 
+
+I want to become a developer who values teamwork and communication, and who can make mutual progress in the process of collaboration. I will continue to work hard to become a developer who can solve problems and grow.
+
+
+To receive my resume, please click the button below <br>
 {{< icon name="download" pack="fas" >}}{{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}}

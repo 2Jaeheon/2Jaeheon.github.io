@@ -1,6 +1,6 @@
 ---
-title: 자바 웹을 워크북
-summary: 자바로 웹 백엔드를 개발하기 위한 Servlet, Spring, SpringBoot 등의 기술로 투두리스트 게시판 앱 구현
+title: Java Web Workbook
+summary: Implementing a to-do bulletin board app with Servlet, Spring, SpringBoot, and other technologies for developing web backends in Java
 tags:
   - web
 date: 2024-09-01

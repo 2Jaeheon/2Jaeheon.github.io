@@ -3,23 +3,16 @@ title: 인스타 브레인
 date: 2024-03-29
 ---
 
+If you take a moment to look around you, you'll likely see several people with their hands on their smartphones, and they'll be glued to them. They've taken over our lives, and it's hard to imagine our lives without them. It has allowed us to collect all the data we want, stay in touch with whoever we want, and enjoy all the entertainment we want. But I also think that people have become too attached to their smartphones these days. Even I was living that way right now. As with light, there is darkness, and I think it's time to think about the dangers of smartphones.
 
-상태: 독서노트<br>
-별점: ★★★<br>
-저자: 안데르스 한센<br>
-읽은 기간: 2023년 1월 20일 → 2023년 2월 10일<br>
-키워드: 뇌과학, 습관, 자기관리, 정신건강<br>
-한 줄 평: 도파민에 지배당하는 인간<br>
-등록일: 2024년 2월 23일 오후 9:10<br>
-한단어감상: 한번읽을만해<br>
-분류: 자기개발<br>
 
-주변에 사람이 있는 상태에서 잠시 주위를 둘러본다면 십중팔구 스마트폰을 쥐고 있을 것이고, 그것에 정신 팔려있는 사람을 여러 명 찾아볼 수 있을 것이다. 그만큼 스마트폰은 우리 삶을 장악했고, 이제는 스마트폰을 우리의 삶과 분리시켜 상상하는 일이란 매우 어려운 일이 되었다. 그 덕에 원하기만 하면 모든 데이터를 수집할 수 있고, 원하고자 하는 대상과 연락할 수 있게 되었으며, 모든 오락거리도 즐길 수 있게 되었다. 다만 근래에는 너무 사람들이 스마트폰에 매몰되어서 살아가는 것 같다는 생각도 든다. 당장 나조차도 그렇게 살아가고 있었으니 말이다. 빛이 있으면 어둠이 있듯 이제는 스마트폰에 대한 위험성에도 생각해보아야 할 때가 된 것 같다.
+The rise in depression, decreased attention span, and social isolation due to fewer relationships between people are just a few of the phenomena that have emerged since the advent of smartphones. Of course, there is not enough evidence to attribute all of these phenomena to smartphones alone, but the high correlation coefficients suggest that there is indeed some connection. In the book, it is said that humans have evolved from the beginning of time to now with a focus on survival, but in recent years, the world has changed drastically and we have a life with smartphones, and as a result, humans have become addicted to smartphones (I think it's more than addiction, it's dependence). It's easy to see how smartphones have had a huge impact on human beings just by watching people turn off and on their smartphones when they have nothing else to do.
 
-스마트폰을 사용하게 된 이래로 나타난 현상에는 우울증 환자의 증가, 집중력의 감소, 사람 간의 관계 축소로 인한 사회적 고립감 등이 있다. 물론 이 모든 현상들이 스마트폰만의 영향이라고 치부하기에는 턱없이 증거가 부족하지만, 꽤나 높은 상관계수를 가지고 있다는 근거를 통해 실제로 어느 정도의 관련이 있다는 사실을 알 수 있다. 책에서는 인간이 시초부터 지금까지 진화하는 동안 생존을 초점으로 하여 진화해 왔는데, 근래에 들어 세상이 급격히 변해 스마트폰이 있는 삶을 가지게 되었고, 그로인해 인간이 스마트폰에 중독(본인은 중독을 넘어 의존증이라고 생각한다.) 되었다고 한다. 사람들이 아무것도 없는데 스마트폰을 껐다 켰다하는 것만 보아도 스마트폰이 인간에게 얼마나 큰 영향을 미쳤는지를 쉽게 찾아볼 수 있다.
 
-도파민은 사실 기분이 좋을 때 분비되는 것이 아니라, 기분이 좋게 만들어지기 위해 분비되는 호르몬이다. 즉 엔진이라고 볼 수 있다. 도파민은 음식을 먹기 전 놓여있을 때 분비되는 것이지 먹는 동안 분비되는 것이 아니다. 그렇기에 도파민 체계가 망가지면 인간은 어떤 일에도 집중할 수 없게 된다. 하지만 스마트폰과 SNS는 도파민을 10초에 한 번씩 분비시킴으로써 우리의 뇌에 막대한 영향을 미치고 있다. 위의 예시만 본다면 우리가 스마트폰과 SNS를 잠시 중단하거나, 끊어야 한다는 것이 자명해 보인다. 다만 SNS를 잘만 활용한다면 더욱 많은 사람을 만나고 관계를 형성함으로써 더 나은 자신이 될 수 있지 않을까? 이건 물론 맞는 말이다. 하지만 SNS를 잘 활용하기란 어지간히 어려운 일이라는 사실을 명심하자.
 
-진화는 장단점을 따지지 않고 오직 생존을 위해서 이루어져 왔다. 즉, 우리 눈에는 형편없이 보이는 것도 실은 진화의 잔재라고 볼 수 있다. 우리가 이성적인 판단을 하기에 시간이 부족하거나, 할 수 없는 상황에서는 뇌는 즉시 감정이라는 형태로 답을 제시하는 것처럼 말이다. 세간에서는 이성이 감정보다 우선이고 최선인 것처럼 선전하고는 한다. 하지만 과연 이성이 감정보다 더욱 우수한 것일까? 난 아니라고 본다. 모든 이성적 판단 과정에서는 감정의 영향이 깃들어 있다고 보기 때문에 감정을 가볍게 치부하는 것은 어리석은 생각일 것이다.(그렇다고 해서 이성이 중요하지 않다는 의미는 아님) 감정은 불가항력적이고 통제할 수 없는 부분이기 때문에 오히려 받아들이는 것이 실은 더욱 좋은 것이다. 감정과 이성은 뗄 수 없는 관계이며, 그렇기에 무게를 논하는 일 자체가 무의미하다. 감정과 이성을 불가분 한 개념이 아니기에 합일시켜 하나의 또 다른 형태의 무언가로 만들어내는 일이 우리에게는 필요한 것 같다.
+Dopamine isn't actually released when you feel good, it's released to make you feel good. In other words, it's an engine. Dopamine is released before you eat, not while you're eating, so if your dopamine system is messed up, you won't be able to focus on anything. However, smartphones and social media have a huge impact on our brains by releasing dopamine every 10 seconds. Based on the above examples, it seems obvious that we should take a break from our smartphones and social media. After all, if we use social media well, we can meet more people, build relationships, and become better versions of ourselves, right? This is certainly true. However, it's important to keep in mind that social media can be quite challenging.
 
-여러 가지 뇌과학적인 이야기를 통해 우리의 뇌가 어떻게 작동하는지, 멀티태스킹이 왜 뇌에 좋지 않은 지, 장기기억이 어떻게 만들어지는 지와 같은 실용적인 내용을 알게 되어서 만족했다. 실은 본인도 스마트폰에 중독되어 있다는 사실을 전부터 오랫동안 알고 있었지만, 쉽게 고치지 못하는 것을 보니 뇌의 도파민 체계가 이미 손상되어 버린 걸지도 모르겠다. 다만 노력에는 의의가 있고 중대한 의미가 있기에 비관대신 끊임없이 발전을 위해 분투하는 삶을 지향하는 편이 더 멋진 것 같다. 스마트폰을 사용하지 않는 걸 목표로 삼는 것도 재미있을 것 같다
+
+Evolution has always been about survival without weighing the pros and cons, so what looks bad to us is actually a remnant of evolution. In the same way that when we don't have enough time to make a rational decision, or when we can't, the brain immediately provides an answer in the form of emotion. The world often touts the idea that reason trumps emotion and is best. But is reason really superior to emotion? I don't think so. I think it would be foolish to dismiss emotion as a factor in any rational decision-making process (which doesn't mean that reason isn't important), but it's actually better to embrace it because it's an unavoidable and uncontrollable part of life. Emotion and reason are inseparable, and it's pointless to try to weigh them. Emotion and reason are not inseparable, and it seems that we need to merge them into one form of something else.
+
+I was happy to learn a lot of practical things about how our brains work, why multitasking is bad for the brain, and how long-term memories are made. I've known for a long time that I'm addicted to my smartphone, but the fact that I can't seem to get rid of it easily makes me wonder if the dopamine system in my brain is already damaged. However, I think it's better to aim for a life of constant improvement instead of pessimism because the effort is meaningful and significant. It would be fun to make a goal of not using a smartphone.

@@ -9,15 +9,15 @@ sections:
     content:
       title: Contact
       text: |-
-       <br> <span style="font-size:95%">안녕하세요 저는 백엔드 개발자 이재헌입니다. 연락을 희망하시는 분은 아래를 참조해주세요!!</span> <br>
+       <br> <span style="font-size:95%">Hello, I'm Jaeheon Lee, a backend developer. If you would like to contact me, please see below!</span> <br>
       email: jaeheon0826@gmail.com
       phone: +82-010-2967-8645
       address:
-        street: 서신로 102
-        city: 전주시
-        region: 전라북도
+        street: seosinro 102
+        city: Jeonju
+        region: Jeonbuk State
         postcode: '54945'
-        country: 대한민국
+        country: Korea
         country_code: KO
       coordinates:
         latitude: '35.8352788067795'

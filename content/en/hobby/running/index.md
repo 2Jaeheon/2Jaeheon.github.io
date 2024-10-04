@@ -3,9 +3,9 @@ title: 러닝
 date: 2024-03-29
 ---
 
-저에게 러닝은 단순한 운동을 넘어, 오직 나로서 존재하는 감각을 선사합니다.
+For me, running is more than just exercise, it gives me a sense of just being me.
 
-러닝을 통해 머릿속을 정리하고, 비우며 아무런 생각 없이 오직 나로서만 존재할 수 있다는 감각을 매우 좋아합니다.
-특히 스트레스를 받는 날에는 스트레스를 풀어주는 가장 큰 운동입니다. 처음에는 1~3km만 달려도 매우 힘들었지만, 이제는 더 긴 거리를 달릴 수 있게 되었습니다. 어떤 목표를 설정하고 그 목표를 달성하기 위해 스스로의 한계를 뛰어넘는 과정은 다른 무엇으로도 느끼기 힘든 기쁨을 줍니다.
+I love the feeling of clearing my head, emptying my mind, and being able to just be me without any thoughts.
+It's my biggest stress reliever, especially on stressful days. At first, I found it very difficult to run even 1-3 kilometers, but now I'm able to run longer distances. The process of setting a goal and pushing myself to achieve it gives me joy like nothing else.
 
-또한 러닝을 통해 자연과 함께하는 시간을 즐깁니다. 도심과는 달리 강변과 공원에 놓인 길을 따라 달리면 신선한 공기와 평소에 보이지 않던 자연 풍경을 한껏 만끽할 수 있습니다. 이러한 경험들은 소중한 기억으로 남을 것 같습니다. 이렇게 러닝은 저를 더 나은 사람으로 만들어주는 소중한 취미입니다.
+I also enjoy spending time with nature through running. Unlike in the city, running along paths along rivers and in parks allows me to soak up the fresh air and see natural landscapes I wouldn't normally see. These experiences are memories that I will cherish forever, which is why running is such a valuable hobby that makes me a better person.

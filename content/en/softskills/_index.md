@@ -12,7 +12,7 @@ sections:
     id: section-3
     content:
       title: soft Skills
-      subtitle: 소프트 스킬
+      subtitle: It's about non-technical things.
       # Display content from the `content/post/` folder
       filters:
         folders:

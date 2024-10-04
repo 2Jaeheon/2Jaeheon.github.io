@@ -26,33 +26,33 @@ item:
   - certificate_url: 
     date_end: ''
     date_start: '2020-08-28'
-    description: '2020년도 1학기 최우등상'
-    organization: 전주대학교
-    title: 최우등상
+    description: 'First Semester 2020 Honors'
+    organization: Jeonju University
+    title: First Prize
     url: 
 
   - certificate_url: 
     date_end: ''
     date_start: '2021-02-28'
-    description: '2020년도 2학기 최우등상'
-    organization: 전주대학교
-    title: 최우등상
+    description: 'Second Semester 2020 Honors'
+    organization: Jeonju University
+    title: First Prize
     url: 
 
   - certificate_url: 
     date_end: ''
     date_start: '2023-08-16'
-    description: '2023년도 1학기 최우등상'
-    organization: 전주대학교
-    title: 최우등상
+    description: 'First Semester 2023 Honors'
+    organization: Jeonju University
+    title: First Prize
     url: 
 
   - certificate_url: 
     date_end: ''
     date_start: '2024-02-21'
-    description: '2023년도 1학기 최우등상'
-    organization: 전주대학교
-    title: 최우등상
+    description: 'Second Semester 2023 Honors'
+    organization: Jeonju University
+    title: First Prize
     url: 
 
 design:

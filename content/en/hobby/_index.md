@@ -1,5 +1,5 @@
 ---
-title: 취미생활
+title: hobbies
 
 view: community/card_view
 
