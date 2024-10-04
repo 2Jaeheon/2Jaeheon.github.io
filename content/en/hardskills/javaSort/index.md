@@ -10,9 +10,6 @@ image:
 While using the sort methods in Java, I was curious about the algorithm used. I learned about various sorting methods in my undergraduate data structure algorithms course, but I didn't know which sort is used in Java and how it works, so I wrote this article to learn more about it. I hope you find this article helpful if you are curious about how sort works in Java.
 <br><br>
 
-# 자바의 정렬 메소드
-자바의 정렬 메소드는 대표적으로 두 가지 있습니다.
-
 # Sorting Methods in Java
 There are two main sorting methods in Java.
 
@@ -58,9 +55,9 @@ Unmerged runs are set aside in a stack, and the runs in the stack are kept to sa
 Translated with www.DeepL.com/Translator (free version)
 
 
-If you're interested in learning more about how it works, you can check out the following links.
-[Tim Sort의 원리](https://skerritt.blog/timsort/)<br>
-[Tim Sort 네이버 D2 블로그](https://d2.naver.com/helloworld/0315536) 
+If you're interested in learning more about how it works, you can check out the following links.<br><br>
+[What is Timsort](https://skerritt.blog/timsort/)<br>
+[How to work Timsort](https://d2.naver.com/helloworld/0315536) 
 
 
 # Why use Tim Sort vs. Dual-Pivot Quick Sort?
