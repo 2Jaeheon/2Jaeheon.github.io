@@ -1,5 +1,5 @@
 ---
-title: 멋진 신세계
+title: Brave New World
 date: 2023-01-27
 ---
 

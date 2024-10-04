@@ -1,5 +1,5 @@
 ---
-title: 어떤 생각들은 나의 세계가 된다
+title: Some thoughts become my world 
 date: 2023-12-18
 ---
 

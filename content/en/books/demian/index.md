@@ -1,5 +1,5 @@
 ---
-title: 데미안
+title: Demian
 date: 2023-02-24
 ---
 

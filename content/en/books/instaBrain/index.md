@@ -1,5 +1,5 @@
 ---
-title: 인스타 브레인
+title: Instagram Brain
 date: 2024-03-29
 ---
 
