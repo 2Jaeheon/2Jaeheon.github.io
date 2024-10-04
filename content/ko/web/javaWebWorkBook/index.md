@@ -1,6 +1,6 @@
 ---
 title: 자바 웹을 워크북
-summary: 자바 웹의 기술로 프로젝트를 진행해봅니다. Servlet -> Spring -> SpringBoot로 프로젝트를 진행합니다.
+summary: 자바로 웹 백엔드를 개발하기 위한 기초 지식들을 학습(Servlet, Spring, SpringBoot)
 tags:
   - web
 date: 2024-09-01
