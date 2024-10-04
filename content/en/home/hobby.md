@@ -4,7 +4,7 @@ headless: true  # This file represents a page section.
 
 # Put Your Section Options Here (title, background, etc.) ...
 title: Hobbies
-subtitle: 'It's a hobby I'm currently enjoying.'
+subtitle: It's a hobby I'm currently enjoying.
 
 # Position of this section on the page
 weight: 60
